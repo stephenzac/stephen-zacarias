@@ -1,0 +1,87 @@
+.home-page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+#name-pic-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  gap: 15px;
+  padding-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#name-header {
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+#me-picture {
+  border-radius: 20px;
+  width: 170px;
+  height: auto;
+}
+
+.section-header {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#about-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 50px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+#projects-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#bottom-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  #name-header {
+    font-size: 45px;
+  }
+
+  #name-pic-area {
+    width: 450px;
+    gap: 50px;
+    margin-top: 40px;
+  }
+
+  #me-picture {
+    width: 240px;
+  }
+
+  #about-area {
+    width: 60vw;
+  }
+}

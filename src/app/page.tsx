@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className="flex flex-row items-center justify-center w-80 gap-8 pr-1 mt-10 mb-14">
         <h1 className="responsive-header text-center mt-8 pb-4 font-black">
-          Hey, I'm <span className="italic">Stephen</span>!
+          Hey, {`I'm`} <span className="italic">Stephen</span>!
         </h1>
         <Image
           src="/stephen.JPG"
@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center text-center responsive-text text-balance w-4/5 mb-20">
         <p>
-          I'm a third year Computer Science major at the University of
+          {`I'm`} a third year Computer Science major at the University of
           California, Irvine. I have a particular interest in developing web
           applications, with experience in developing with Typescript, React,
           Next.js, Tailwind CSS, and HTML/CSS.
@@ -46,7 +46,7 @@ export default function Home() {
 
       <div className="flex flex-col w-4/5 mb-28 responsive-text text-balance">
         <h1 className="section-header">
-          When I'm not programming or studying...
+          When {`I'm`} not programming or studying...
         </h1>
 
         <h1>Music</h1>

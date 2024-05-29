@@ -1,4 +1,4 @@
-.home-page-body {
+/* .home-page-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,9 +6,9 @@
   height: auto;
   width: 100%;
   padding-bottom: 15px;
-}
+} */
 
-#name-pic-area {
+/* #name-pic-area {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,16 +18,16 @@
   padding-right: 5px;
   margin-top: 20px;
   margin-bottom: 50px;
-}
+} */
 
-#name-header {
+/* #name-header {
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
   font-style: italic;
-}
+  animation: slide-in 0.5s linear forwards;
+} */
 
 #me-picture {
   border-radius: 20px;
@@ -35,38 +35,50 @@
   height: auto;
 }
 
-.section-header {
-  font-size: 40px;
+/* .section-header {
+  font-size: 30px;
   font-weight: bolder;
-}
+} */
 
-#about-area {
+/* #about-area {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 80vw;
   margin-bottom: 50px;
-  text-align: center;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   text-wrap: balance;
-}
+} */
 
-#projects-area {
+/* #projects-area {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-}
+} */
 
-#bottom-area {
+/* #interests-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+  margin-bottom: 50px;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  text-wrap: balance;
+} */
+
+/* #bottom-area {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
   font-size: 12px;
   margin-left: 30px;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   #name-header {
     font-size: 45px;
   }
@@ -84,4 +96,4 @@
   #about-area {
     width: 60vw;
   }
-}
+} */

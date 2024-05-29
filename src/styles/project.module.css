@@ -1,12 +1,15 @@
-.project {
+/* .project {
   display: flex;
   flex-direction: column;
-  width: 75vw;
-  gap: 40px;
+  background-color: grey;
+  border-radius: 12px;
+  width: clamp(250px, 50%, 350px);
+  height: 150px;
+  text-align: center;
 }
 
 .image-and-description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
-}
+} */

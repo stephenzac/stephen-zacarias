@@ -67,7 +67,7 @@ export default function Projects() {
               <a
                 href={project.projectLink}
                 target="_blank"
-                className="project-header"
+                className="project-header hover:scale-125 transition-all"
               >
                 {project.projectName}
               </a>

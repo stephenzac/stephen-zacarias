@@ -30,7 +30,10 @@ export default function Links() {
       {links.map((link: MyLinks) => {
         return (
           <div key={link.link}>
-            <a href={link.link} className="flex flex-row items-center text-lg">
+            <a
+              href={link.link}
+              className="hover:scale-125 transition-all flex flex-row items-center text-lg"
+            >
               {link.linkIcon}
               {link.linkText}
             </a>

@@ -73,7 +73,7 @@ export default function Home() {
       <Projects />
 
       <motion.div
-        className="flex flex-col w-4/5 mb-16 responsive-text text-balance text-center lg:text-left"
+        className="flex flex-col w-4/5 mb-16 responsive-text text-balance text-center md:text-left"
         variants={{
           hidden: { opacity: 0, translateY: 100 },
           visible: { opacity: 1, translateY: 0 },
@@ -84,7 +84,7 @@ export default function Home() {
         transition={{ duration: 0.6 }}
       >
         <h1 className="section-header self-start text-balance">
-          My interests, when {`I'm`} not programming or studying...
+          Outside of programming and studying...
         </h1>
 
         <motion.div
@@ -104,11 +104,25 @@ export default function Home() {
           <h1 className="text-xl lg:text-2xl text-lighterAccent">music</h1>
           <ul>
             <li>
-              <span className="list-plus">+ </span>trombone (jazz trombone)
+              <span className="list-plus">+ </span>
+              <a
+                href="https://www.youtube.com/watch?v=PM5NgQcdWqM"
+                target="_blank"
+                className="hover:scale-125"
+              >
+                trombone
+              </a>{" "}
+              (jazz trombone)
             </li>
             <li>
               <span className="list-plus">+ </span>influenced by sound and
-              nuances of L.A studio jazz trombonists
+              nuances of{" "}
+              <a
+                href="https://www.youtube.com/watch?v=Ic0FsCs-R6Y"
+                target="_blank"
+              >
+                L.A studio jazz trombonists
+              </a>
             </li>
             <li>
               <span className="list-plus">+ </span>uci anteater band
@@ -128,7 +142,8 @@ export default function Home() {
                 className="underline"
               >
                 here
-              </a>
+              </a>{" "}
+              (bruno mars and la la land enthusiast)
             </li>
           </ul>
         </motion.div>
@@ -147,13 +162,10 @@ export default function Home() {
           }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-xl lg:text-2xl text-lighterAccent">gaming</h1>
+          <h1 className="text-xl md:text-2xl text-lighterAccent">gaming</h1>
           <ul>
             <li>
-              <span className="list-plus">+ </span>fps games
-            </li>
-            <li>
-              <span className="list-plus">+ </span>valorant, csgo
+              <span className="list-plus">+ </span>favorite genre: fps games
             </li>
             <li>
               <span className="list-plus">+ </span>aiming for the best
@@ -162,10 +174,20 @@ export default function Home() {
             <li>
               <span className="list-plus">+ </span>
               <a
+                href="https://www.youtube.com/watch?v=I_DsR2mZsK0"
+                target="_blank"
+              >
+                valorant
+              </a>
+              , csgo, overwatch, pokémon enjoyer
+            </li>
+            <li>
+              <span className="list-plus">+ </span>
+              <a
                 href="https://www.youtube.com/watch?v=5HOU8SykHzg"
                 target="_blank"
               >
-                speedrunning minesweeper
+                minesweeper speedrunning
               </a>{" "}
               (previously top 10 in google minesweeper)
             </li>

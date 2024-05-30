@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  color: white;
+  color: gainsboro;
 
   background-image: radial-gradient(
     #414141 1.2000000000000002px,
@@ -31,7 +31,6 @@ a:link {
   }
 
   .responsive-header {
-    /* font-size: clamp(1.5rem, 1vw, 5rem); */
     font-size: clamp(1.7rem, 3vw, 2.4rem);
   }
 
@@ -52,13 +51,9 @@ a:link {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
   }
 
-  .progress-bar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background-color: red;
-    transform-origin: 0%;
+  .list-plus {
+    color: #b0f2f7;
+    margin-left: 16px;
+    font-size: 16px;
   }
 }

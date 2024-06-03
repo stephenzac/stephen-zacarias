@@ -32,6 +32,7 @@ export default function Links() {
           <div key={link.link}>
             <a
               href={link.link}
+              target="_blank"
               className="hover:scale-125 transition-all flex flex-row items-center text-lg"
             >
               {link.linkIcon}

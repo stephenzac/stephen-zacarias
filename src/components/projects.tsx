@@ -27,7 +27,7 @@ export default function Projects() {
           return (
             <motion.div
               key={projectIdx}
-              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-gray-500 hover:text-white text-gray-200 transition-colors font-semibold rounded-xl pt-2 pb-3"
+              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 hover:text-white text-gray-200 transition-colors font-semibold rounded-lg border-2 pt-2 pb-3"
               variants={{
                 ...projectVariant,
                 animate: {
@@ -37,11 +37,11 @@ export default function Projects() {
               }}
               initial={"hidden"}
               whileInView={"animate"}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.11 }}
             >
               {project.projectLink === "" ? (
                 <h1 className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all cursor-pointer">
-                  {project.projectName} <GoLinkExternal />
+                  {project.projectName}
                 </h1>
               ) : (
                 <a

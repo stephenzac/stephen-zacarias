@@ -111,7 +111,7 @@ export default function Home() {
             width={225}
             alt="Picture of Stephen smiling"
             priority={true}
-            className="w-48 h-auto border-4 border-solid border-accent overflow-hidden rounded-xl mb-3"
+            className="w-48 h-auto border-4 border-solid border-accent overflow-hidden rounded-lg mb-3"
           />
         </motion.div>
       </div>
@@ -132,9 +132,9 @@ export default function Home() {
           },
         }}
         viewport={{ once: true }}
-        className="flex flex-col gap-20 items-center text-center responsive-text text-balance w-4/5 mb-20"
+        className="flex flex-col gap-20 items-center w-4/5 mb-20"
       >
-        <p>
+        <p className="text-center responsive-text text-balance">
           {`I'm`} a fourth year Computer Science major at the University of
           California, Irvine. I have a particular interest in developing web
           applications, with experience in developing with Typescript, React,
@@ -169,45 +169,43 @@ export default function Home() {
           }}
         >
           <h1 className="text-xl lg:text-2xl text-lighterAccent">music</h1>
-          <div className="flex flow-row flex-wrap gap-8 items-center">
-            <ul>
-              <li>
-                <ListPlus />
-                <a
-                  href="https://www.youtube.com/watch?v=PM5NgQcdWqM"
-                  target="_blank"
-                  className="hover:scale-125"
-                >
-                  trombone
-                </a>
-                {` (jazz trombone)`}
-              </li>
-              <li>
-                <ListPlus /> influenced by sound and nuances of
-                <a
-                  href="https://www.youtube.com/watch?v=Ic0FsCs-R6Y"
-                  target="_blank"
-                >
-                  {` L.A studio jazz trombonists`}
-                </a>
-              </li>
-              <ListElement text="uci anteater band" />
-              <ListElement text="uci jazz orchestra" />
-              <ListElement text="uci wind ensemble" />
-              <li>
-                <ListPlus />
-                {`my spotify account `}
-                <a
-                  href="https://open.spotify.com/user/cheesehugger1"
-                  target="_blank"
-                  className="underline"
-                >
-                  here
-                </a>
-                {` (bruno mars and la la land enthusiast)`}
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <ListPlus />
+              <a
+                href="https://www.youtube.com/watch?v=PM5NgQcdWqM"
+                target="_blank"
+                className="hover:scale-125"
+              >
+                trombone
+              </a>
+              {` (jazz trombone)`}
+            </li>
+            <li>
+              <ListPlus /> influenced by sound and nuances of
+              <a
+                href="https://www.youtube.com/watch?v=Ic0FsCs-R6Y"
+                target="_blank"
+              >
+                {` L.A studio jazz trombonists`}
+              </a>
+            </li>
+            <ListElement text="uci anteater band" />
+            <ListElement text="uci jazz orchestra" />
+            <ListElement text="uci wind ensemble" />
+            <li>
+              <ListPlus />
+              {`my spotify account `}
+              <a
+                href="https://open.spotify.com/user/cheesehugger1"
+                target="_blank"
+                className="underline"
+              >
+                here
+              </a>
+              {` (bruno mars and la la land enthusiast)`}
+            </li>
+          </ul>
         </motion.div>
 
         <motion.div
@@ -221,32 +219,30 @@ export default function Home() {
           }}
         >
           <h1 className="text-xl md:text-2xl text-lighterAccent">gaming</h1>
-          <div className="flex flow-row flex-wrap gap-8 items-center">
-            <ul>
-              <ListElement text="favorite game genre: fps games" />
-              <ListElement text="aiming for the best strategies, teamwork, and mechanics in the game server to win" />
-              <li>
-                <ListPlus />
-                <a
-                  href="https://www.youtube.com/watch?v=I_DsR2mZsK0"
-                  target="_blank"
-                >
-                  valorant
-                </a>
-                , csgo, overwatch, pokémon enjoyer
-              </li>
-              <li>
-                <ListPlus />
-                <a
-                  href="https://www.youtube.com/watch?v=5HOU8SykHzg"
-                  target="_blank"
-                >
-                  minesweeper speedrunning
-                </a>
-                {` (previously top 10 in google minesweeper)`}
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <ListElement text="favorite game genre: fps games" />
+            <ListElement text="aiming for the best strategies, teamwork, and mechanics in the game server to win" />
+            <li>
+              <ListPlus />
+              <a
+                href="https://www.youtube.com/watch?v=I_DsR2mZsK0"
+                target="_blank"
+              >
+                valorant
+              </a>
+              , csgo, overwatch, pokémon enjoyer
+            </li>
+            <li>
+              <ListPlus />
+              <a
+                href="https://www.youtube.com/watch?v=5HOU8SykHzg"
+                target="_blank"
+              >
+                minesweeper speedrunning
+              </a>
+              {` (previously top 10 in google minesweeper)`}
+            </li>
+          </ul>
         </motion.div>
 
         <motion.div
@@ -273,7 +269,7 @@ export default function Home() {
 
       {/* Bottom section */}
       <div className="flex flex-col items-start w-full text-xs text-balance px-5 mr-auto pt-4">
-        <p>© Stephen Zacarias 2024</p>
+        <p>&copy; Stephen Zacarias 2024</p>
         <p>
           Built with Next.js, Framer Motion, Typescript, react-icons, and
           deployed on Vercel

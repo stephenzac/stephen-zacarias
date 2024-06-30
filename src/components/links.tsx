@@ -1,11 +1,11 @@
 import { DiGithubBadge } from "react-icons/di";
 import { AiFillSpotify, AiFillLinkedin } from "react-icons/ai";
 
-interface MyLinks {
+type MyLinks = {
   linkText: string;
   link: string;
   linkIcon: any;
-}
+};
 export default function Links() {
   const links: MyLinks[] = [
     {
@@ -13,15 +13,16 @@ export default function Links() {
       link: "https://github.com/stephenzac",
       linkIcon: <DiGithubBadge />,
     },
-    {
-      linkText: "Spotify",
-      link: "https://open.spotify.com/user/cheesehugger1",
-      linkIcon: <AiFillSpotify />,
-    },
+
     {
       linkText: "LinkedIn",
       link: "https://linkedin.com/in/stephen-zac",
       linkIcon: <AiFillLinkedin />,
+    },
+    {
+      linkText: "Spotify",
+      link: "https://open.spotify.com/user/cheesehugger1",
+      linkIcon: <AiFillSpotify />,
     },
   ];
 
@@ -33,7 +34,7 @@ export default function Links() {
             <a
               href={link.link}
               target="_blank"
-              className="hover:scale-125 transition-all flex flex-row items-center text-lg"
+              className="hover:scale-110 hover:text-white transition-all flex flex-row items-center text-lg"
             >
               {link.linkIcon}
               {link.linkText}

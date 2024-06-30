@@ -12,10 +12,6 @@ body {
   background-size: 24px 24px;
 }
 
-a:link {
-  /* text-decoration: underline; */
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -35,13 +31,7 @@ a:link {
   }
 
   .responsive-text {
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-  }
-
-  .project-box {
-    /* width: clamp(250px, 50%, 350px); */
-    width: 35%;
-    /* height: 250px; */
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   }
 
   .project-text {

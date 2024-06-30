@@ -37,6 +37,6 @@ export const projects: Project[] = [
     projectName: "Anteater Band Website",
     projectLink: "",
     projectDescription: "Under construction...",
-    skills: ["React", "Next.js", "Chakra UI"],
+    skills: ["Next.js", "TypeScript", "Chakra UI"],
   },
 ];

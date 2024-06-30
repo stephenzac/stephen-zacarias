@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Links from "../components/links";
-import Projects from "../components/projects";
 import TopScrollBar from "../components/top-scroll-bar";
 import ListPlus from "../components/list-plus";
 import ListElement from "../components/list-element";
+import Projects from "../components/projects";
 
 export default function Home() {
   const xSlide = {
@@ -29,16 +29,68 @@ export default function Home() {
       <TopScrollBar />
       <div className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mt-10 mb-12 lg:mb-16">
         <motion.div
-          variants={xSlide}
+          variants={{
+            ...xSlide,
+            animate: {
+              ...xSlide.animate,
+              transition: {
+                ...xSlide.animate.transition,
+                delay: 0.3,
+              },
+            },
+          }}
           initial={"hidden"}
           animate={"animate"}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
           className="flex flex-col items-center"
         >
-          <h1 className="responsive-header text-center pb-4 font-black">
-            Hey, {`I'm`} <span className="italic">Stephen</span>!
+          <h1 className="flex flex-row responsive-header text-center pb-4 font-black">
+            <motion.div
+              variants={{
+                ...xSlide,
+                animate: {
+                  ...xSlide.animate,
+                  transition: {
+                    duration: 0.7,
+                    delay: 0.3,
+                  },
+                },
+              }}
+            >
+              <span className="inline-block">Hey,&nbsp;</span>
+            </motion.div>
+
+            <motion.div
+              variants={{
+                ...xSlide,
+                animate: {
+                  ...xSlide.animate,
+                  transition: {
+                    duration: 0.7,
+                    delay: 0.52,
+                  },
+                },
+              }}
+            >
+              <span>{`I'm`}&nbsp;</span>
+            </motion.div>
+
+            <motion.div
+              variants={{
+                ...xSlide,
+                animate: {
+                  ...xSlide.animate,
+                  transition: {
+                    duration: 0.7,
+                    delay: 0.74,
+                  },
+                },
+              }}
+            >
+              <span className="italic">Stephen!</span>
+            </motion.div>
           </h1>
+
           <Links />
         </motion.div>
 
@@ -65,40 +117,33 @@ export default function Home() {
       </div>
 
       {/* About paragraph */}
-      <div className="flex flex-col items-center text-center responsive-text text-balance w-4/5 mb-20">
-        <motion.div
-          variants={ySlide}
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.5,
-              delay: 0.5,
-            },
-          }}
-          viewport={{ once: true }}
-        >
-          <p>
-            {`I'm`} a third year Computer Science major at the University of
-            California, Irvine. I have a particular interest in developing web
-            applications, with experience in developing with Typescript, React,
-            Next.js, Tailwind CSS, and HTML/CSS.
-          </p>
-        </motion.div>
-      </div>
+      <motion.div
+        variants={ySlide}
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+            delay: 0.3,
+          },
+        }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-20 items-center text-center responsive-text text-balance w-4/5 mb-20"
+      >
+        <p>
+          {`I'm`} a fourth year Computer Science major at the University of
+          California, Irvine. I have a particular interest in developing web
+          applications, with experience in developing with Typescript, React,
+          Next.js, Tailwind CSS, and HTML/CSS.
+        </p>
+      </motion.div>
 
       {/* Projects */}
       <Projects />
-      {/* <motion.div
-        whileHover={{ scaleX: 2, scaleY: 2, y: -15 }}
-        className="w-48 h-16 rounded-xl bg-red-400"
-      >
-        <h1 className="text-center text-neutral-700">Test Project</h1>
-      </motion.div> */}
 
       {/* Interests section */}
       <motion.div

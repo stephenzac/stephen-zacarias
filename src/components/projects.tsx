@@ -1,18 +1,21 @@
-import { motion } from "framer-motion";
 import { Project, projects } from "../app/project-data";
+import { motion } from "framer-motion";
+import { GoLinkExternal } from "react-icons/go";
+import ProjectSkill from "./project-skill";
 
 export default function Projects() {
+  const projectVariant = {
+    hidden: { opacity: 0, x: -100 },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, delay: 0.7 },
+    },
+  };
+
   return (
     <motion.div
-      className="flex flex-col"
-      variants={{
-        hidden: { opacity: 0, x: -100 },
-        animate: {
-          opacity: 1,
-          x: 0,
-          transition: { duration: 0.5, delay: 0.7 },
-        },
-      }}
+      variants={projectVariant}
       initial={"hidden"}
       whileInView={"animate"}
       viewport={{ once: true }}
@@ -20,40 +23,45 @@ export default function Projects() {
       <h1 className="section-header">Projects</h1>
 
       <div className="flex flex-wrap items-center justify-center gap-10 mb-28">
-        {projects.map((project: Project) => {
+        {projects.map((project: Project, projectIdx) => {
           return (
             <motion.div
-              className="flex flex-col text-center justify-center project-box bg-accent text-gray-800 font-semibold rounded-xl"
+              key={projectIdx}
+              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-gray-500 hover:text-white text-gray-200 transition-colors font-semibold rounded-xl pt-2 pb-3"
               variants={{
-                hidden: { opacity: 0, x: -100 },
+                ...projectVariant,
                 animate: {
-                  opacity: 1,
-                  x: 0,
-                  transition: { duration: 0.65 },
+                  ...projectVariant.animate,
+                  transition: { duration: 0.6, delay: 0 },
                 },
               }}
               initial={"hidden"}
               whileInView={"animate"}
-              viewport={{ once: true, amount: 0.5 }}
-              key={project.projectName}
+              viewport={{ once: true, amount: 0.3 }}
             >
               {project.projectLink === "" ? (
-                <h1 className="project-header underline hover:scale-125 transition-all cursor-pointer">
-                  {project.projectName}
+                <h1 className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all cursor-pointer">
+                  {project.projectName} <GoLinkExternal />
                 </h1>
               ) : (
                 <a
                   href={project.projectLink}
                   target="_blank"
-                  className="project-header hover:scale-125 transition-all"
+                  className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all"
                 >
-                  {project.projectName}
+                  {project.projectName} <GoLinkExternal />
                 </a>
               )}
+              <div className="bg-gray-200 h-0.5 w-9/12 mx-4 mt-1 mb-2"></div>
 
-              <p className="project-text italic mx-3">
-                {project.projectDescription}
-              </p>
+              <div className="flex flex-col justify-center items-center">
+                <p className="font-normal mx-3">{project.projectDescription}</p>
+                <div className="flex flex-row justify-center flex-wrap gap-3 mt-4 mx-2">
+                  {project.skills.map((skill, skillIdx) => {
+                    return <ProjectSkill skill={skill} key={skillIdx} />;
+                  })}
+                </div>
+              </div>
             </motion.div>
           );
         })}

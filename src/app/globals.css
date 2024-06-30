@@ -13,7 +13,7 @@ body {
 }
 
 a:link {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 @layer utilities {
@@ -39,8 +39,9 @@ a:link {
   }
 
   .project-box {
-    width: clamp(250px, 50%, 350px);
-    height: 150px;
+    /* width: clamp(250px, 50%, 350px); */
+    width: 35%;
+    /* height: 250px; */
   }
 
   .project-text {

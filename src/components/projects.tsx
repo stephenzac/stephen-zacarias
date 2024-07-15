@@ -1,3 +1,4 @@
+"use client";
 import { Project, projects } from "../app/project-data";
 import { motion } from "framer-motion";
 import { GoLinkExternal } from "react-icons/go";
@@ -14,7 +15,7 @@ export default function Projects() {
   };
 
   return (
-    <motion.div
+    <motion.section
       variants={projectVariant}
       initial={"hidden"}
       whileInView={"animate"}
@@ -47,6 +48,7 @@ export default function Projects() {
                 <a
                   href={project.projectLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all"
                 >
                   {project.projectName} <GoLinkExternal />
@@ -66,6 +68,6 @@ export default function Projects() {
           );
         })}
       </div>
-    </motion.div>
+    </motion.section>
   );
 }

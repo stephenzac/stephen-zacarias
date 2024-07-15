@@ -1,3 +1,4 @@
+"use client";
 import { motion, useScroll } from "framer-motion";
 
 export default function TopScrollBar() {

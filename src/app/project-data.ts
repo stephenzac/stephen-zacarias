@@ -13,13 +13,7 @@ export const projects: Project[] = [
       "A wordle-like ear training game to challenge and improve your sense of pitch",
     skills: ["React", "Typescript", "Tailwind CSS", "Vite", "GitHub Pages"],
   },
-  {
-    projectName: "Sentimentify",
-    projectLink: "https://github.com/stephenzac/Sentimentify",
-    projectDescription:
-      "An application to analyze the feel of your Spotify playlists, developed for ICSSC's week-long WebJam 2023",
-    skills: ["Python", "Flask", "REST APIs", "Beautiful Soup"],
-  },
+
   {
     projectName: "This website",
     projectLink: "",
@@ -34,9 +28,16 @@ export const projects: Project[] = [
     ],
   },
   {
+    projectName: "Sentimentify",
+    projectLink: "https://github.com/stephenzac/Sentimentify",
+    projectDescription:
+      "An application to analyze the feel of your Spotify playlists, developed for ICSSC's week-long WebJam 2023",
+    skills: ["Python", "Flask", "REST APIs", "Beautiful Soup"],
+  },
+  {
     projectName: "Anteater Band Website",
     projectLink: "",
     projectDescription: "Under construction...",
-    skills: ["Next.js", "TypeScript", "Chakra UI"],
+    skills: ["Next.js", "TypeScript", "Chakra UI", "Emotion"],
   },
 ];

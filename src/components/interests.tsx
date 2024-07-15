@@ -59,7 +59,15 @@ export default function Interests() {
           </li>
 
           <li>
-            <ListPlus /> uci anteater band
+            <ListPlus />
+            <a
+              href="https://www.youtube.com/watch?v=TsCuT2j36-w&list=PLHFy1972idO-sEZCZxF_o3o3UpMEsm6b6&index=13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-extrabold"
+            >
+              uci anteater band
+            </a>
           </li>
 
           <li>

@@ -15,8 +15,10 @@ const config: Config = {
       },
 
       colors: {
-        accent: "#009fad",
-        lighterAccent: "#b0f2f7",
+        // accent: "#009fad",
+        accent: "#e0a51b",
+        // lighterAccent: "#b0f2f7",
+        lighterAccent: "#ebbd34",
       },
     },
   },

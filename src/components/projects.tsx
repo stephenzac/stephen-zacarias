@@ -41,7 +41,7 @@ export default function Projects() {
               viewport={{ once: true, amount: 0.11 }}
             >
               {project.projectLink === "" ? (
-                <h1 className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all cursor-pointer">
+                <h1 className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
                   {project.projectName}
                 </h1>
               ) : (
@@ -49,7 +49,7 @@ export default function Projects() {
                   href={project.projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-header flex flex-row items-center gap-2 hover:scale-110 transition-all"
+                  className="project-header flex flex-row items-center gap-2 transition-transform hover:scale-110"
                 >
                   {project.projectName} <GoLinkExternal />
                 </a>

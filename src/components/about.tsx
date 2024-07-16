@@ -20,8 +20,20 @@ export default function About() {
     animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
+  const staggerVariants = {
+    before: {},
+    after: { transition: { staggerChildren: 0.35 } },
+  };
+
+  const staggerChildrenVariants = {
+    before: { opacity: 0, x: -100 },
+    after: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
+  const introductionWords = ["Hey,", "I'm", "Stephen!"];
+
   return (
-    <header className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mt-10 mb-20 lg:mb-32">
+    <header className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mb-20 mt-14 lg:mt-16 lg:mb-32">
       <motion.div
         variants={{
           ...xSlide,
@@ -40,48 +52,20 @@ export default function About() {
       >
         <h1 className="flex flex-row responsive-header text-center pb-4 font-black">
           <motion.div
-            variants={{
-              ...xSlide,
-              animate: {
-                ...xSlide.animate,
-                transition: {
-                  duration: 0.7,
-                  delay: 0.3,
-                },
-              },
-            }}
+            initial="before"
+            animate="after"
+            variants={staggerVariants}
           >
-            <span className="inline-block">Hey,&nbsp;</span>
-          </motion.div>
-
-          <motion.div
-            variants={{
-              ...xSlide,
-              animate: {
-                ...xSlide.animate,
-                transition: {
-                  duration: 0.7,
-                  delay: 0.52,
-                },
-              },
-            }}
-          >
-            <span>{`I'm`}&nbsp;</span>
-          </motion.div>
-
-          <motion.div
-            variants={{
-              ...xSlide,
-              animate: {
-                ...xSlide.animate,
-                transition: {
-                  duration: 0.7,
-                  delay: 0.74,
-                },
-              },
-            }}
-          >
-            <span className="italic">Stephen!</span>
+            {introductionWords.map((text, index) => (
+              <motion.span
+                key={index}
+                className="inline-block"
+                variants={staggerChildrenVariants}
+              >
+                {text}
+                {index === introductionWords.length - 1 ? "" : "\u00A0"}
+              </motion.span>
+            ))}
           </motion.div>
         </h1>
 
@@ -127,7 +111,7 @@ export default function About() {
         viewport={{ once: true }}
         className="flex flex-col gap-20 items-center w-4/5"
       >
-        <p className="text-center responsive-text">
+        <p className="text-center responsive-text w-5/6 lg:w-4/6">
           {`I'm`} a fourth year Computer Science major at the University of
           California, Irvine. I have a particular interest in developing web
           applications, with experience in developing with React, Typescript,

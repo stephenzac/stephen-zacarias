@@ -18,7 +18,7 @@ export default function Interests() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <h1 className="section-header self-start text-balance">
+      <h1 className="section-header self-start text-balance font-black">
         Outside of programming and studying...
       </h1>
 

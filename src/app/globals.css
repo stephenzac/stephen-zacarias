@@ -20,14 +20,14 @@ body {
   .section-header {
     font-size: 30px;
     font-size: clamp(1.4rem, 3vw, 2.4rem);
-    font-weight: bolder;
+    font-weight: 900;
     text-wrap: stable;
     margin-bottom: 20px;
     text-align: center;
   }
 
   .responsive-header {
-    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
   }
 
   .responsive-text {

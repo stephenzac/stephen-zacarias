@@ -48,7 +48,7 @@ export default function About() {
         initial={"hidden"}
         animate={"animate"}
         viewport={{ once: true }}
-        className="flex flex-col items-center"
+        className="flex flex-wrap text-center justify-center lg:w-4/12"
       >
         <h1 className="flex flex-row responsive-header text-center pb-4 font-black">
           <motion.div
@@ -89,7 +89,7 @@ export default function About() {
           width={225}
           alt="Picture of Stephen smiling"
           priority={true}
-          className="w-48 h-auto border-4 border-solid border-accent overflow-hidden rounded-lg mb-3"
+          className="w-48 h-auto mb-8 border-4 border-solid border-accent overflow-hidden rounded-lg"
         />
       </motion.div>
 
@@ -111,7 +111,7 @@ export default function About() {
         viewport={{ once: true }}
         className="flex flex-col gap-20 items-center w-4/5"
       >
-        <p className="text-center responsive-text w-5/6 lg:w-4/6">
+        <p className="text-center responsive-text w-full lg:w-4/6">
           {`I'm`} a fourth year Computer Science major at the University of
           California, Irvine. I have a particular interest in developing web
           applications, with experience in developing with React, Typescript,

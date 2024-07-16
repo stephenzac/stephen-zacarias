@@ -1,5 +1,5 @@
 import { DiGithubBadge } from "react-icons/di";
-import { AiFillSpotify, AiFillLinkedin } from "react-icons/ai";
+import { AiFillSpotify, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 
 type MyLinks = {
   linkText: string;
@@ -24,10 +24,15 @@ export default function Links() {
       link: "https://open.spotify.com/user/cheesehugger1",
       linkIcon: <AiFillSpotify />,
     },
+    {
+      linkText: "stephenzacarias2@gmail.com",
+      link: "mailto:stephenzacarias2@gmail.com",
+      linkIcon: <AiFillMail />,
+    },
   ];
 
   return (
-    <div className="flex flex-row gap-4 self-center">
+    <div className="flex flex-wrap justify-center w-full lg:w-4/5 gap-4 self-center">
       {links.map((link: MyLinks) => {
         return (
           <div key={link.link}>

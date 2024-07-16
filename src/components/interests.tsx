@@ -66,7 +66,7 @@ export default function Interests() {
               rel="noopener noreferrer"
               className="underline font-extrabold"
             >
-              uci anteater band
+              uci anteater band (student manager + web developer)
             </a>
           </li>
 

@@ -35,7 +35,7 @@ export default function Links() {
               href={link.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:scale-110 hover:text-white flex flex-row items-center text-lg lg:text-2xl"
+              className="hover:scale-110 transition-transform hover:text-white flex flex-row items-center text-lg lg:text-2xl"
             >
               {link.linkIcon}
               {link.linkText}

@@ -38,6 +38,6 @@ export const projects: Project[] = [
     projectName: "Anteater Band Website",
     projectLink: "",
     projectDescription: "Under construction...",
-    skills: ["Next.js", "TypeScript", "Chakra UI", "Emotion"],
+    skills: ["Next.js", "TypeScript", "Chakra UI", "Emotion", "Contentful"],
   },
 ];

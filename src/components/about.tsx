@@ -4,49 +4,16 @@ import Image from "next/image";
 import Links from "./links";
 
 export default function About() {
-  const xSlide = {
-    hidden: { opacity: 0, x: -100 },
-    animate: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
-  const ySlide = {
-    hidden: { opacity: 0, y: 100 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
-  const staggerVariants = {
-    before: {},
-    after: { transition: { staggerChildren: 0.35 } },
-  };
-
-  const staggerChildrenVariants = {
-    before: { opacity: 0, x: -100 },
-    after: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-  };
-
   const introductionWords = ["Hey,", "I'm", "Stephen!"];
 
   return (
-    <header className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mb-20 mt-14 lg:mt-16 lg:mb-32">
+    <header className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mb-20 mt-8 lg:mt-16 lg:mb-32">
       <motion.div
-        variants={{
-          ...xSlide,
-          animate: {
-            ...xSlide.animate,
-            transition: {
-              ...xSlide.animate.transition,
-              delay: 0.3,
-            },
-          },
+        initial={{
+          opacity: 0,
+          x: -100,
         }}
-        initial={"hidden"}
-        animate={"animate"}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
         viewport={{ once: true }}
         className="flex flex-wrap text-center justify-center lg:w-4/12"
       >
@@ -54,13 +21,19 @@ export default function About() {
           <motion.div
             initial="before"
             animate="after"
-            variants={staggerVariants}
+            variants={{
+              before: {},
+              after: { transition: { staggerChildren: 0.2 } },
+            }}
           >
             {introductionWords.map((text, index) => (
               <motion.span
                 key={index}
                 className="inline-block"
-                variants={staggerChildrenVariants}
+                variants={{
+                  before: { opacity: 0, x: -100 },
+                  after: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+                }}
               >
                 {text}
                 {index === introductionWords.length - 1 ? "" : "\u00A0"}
@@ -74,14 +47,10 @@ export default function About() {
 
       <motion.div
         className="flex flex-col place-items-center self-center"
-        variants={{
-          hidden: { opacity: 0, x: 100 },
-          animate: { opacity: 1, x: 0 },
-        }}
-        initial={"hidden"}
-        animate={"animate"}
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.3 }}
+        transition={{ duration: 0.5 }}
       >
         <Image
           src="/stephen.JPG"
@@ -95,7 +64,6 @@ export default function About() {
 
       {/* About paragraph */}
       <motion.div
-        variants={ySlide}
         initial={{
           opacity: 0,
           y: 100,
@@ -105,7 +73,6 @@ export default function About() {
           y: 0,
           transition: {
             duration: 0.5,
-            delay: 0.3,
           },
         }}
         viewport={{ once: true }}

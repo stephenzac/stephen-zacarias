@@ -1,3 +1,5 @@
 export default function ListPlus() {
-  return <span className="text-lighterAccent ml-4 text-2xl">+ </span>;
+  return (
+    <span className="text-lighterAccent lg:ml-2 text-base lg:text-2xl">+ </span>
+  );
 }

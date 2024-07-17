@@ -10,7 +10,7 @@ export default function Projects() {
     animate: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.5, delay: 0.7 },
+      transition: { duration: 0.5 },
     },
   };
 
@@ -29,13 +29,7 @@ export default function Projects() {
             <motion.div
               key={projectIdx}
               className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 hover:text-white text-gray-200 transition-colors font-semibold rounded-lg border-2 pt-2 pb-3"
-              variants={{
-                ...projectVariant,
-                animate: {
-                  ...projectVariant.animate,
-                  transition: { duration: 0.6, delay: 0 },
-                },
-              }}
+              variants={projectVariant}
               initial={"hidden"}
               whileInView={"animate"}
               viewport={{ once: true, amount: 0.11 }}

@@ -6,31 +6,33 @@ import ListPlus from "./list-plus";
 export default function Interests() {
   const ySlide = {
     hidden: { opacity: 0, y: 100 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+  };
+
+  const viewportSettings = {
+    once: true,
+    amount: 0.3,
   };
 
   return (
-    <motion.section
-      className="flex flex-col w-4/5 mb-16 responsive-text text-balance text-center md:text-left"
-      variants={ySlide}
-      initial={"hidden"}
-      whileInView={"animate"}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      <h1 className="section-header self-start text-balance font-black">
-        Outside of programming and studying...
-      </h1>
-
-      <motion.div
-        className="mb-8"
+    <section className="flex flex-col w-4/5 mb-16 responsive-text text-left md:text-left">
+      <motion.h1
+        className="section-header self-start text-balance font-black"
         variants={ySlide}
         initial={"hidden"}
         whileInView={"animate"}
-        viewport={{
-          once: true,
-          amount: 0.5,
-        }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+      >
+        Outside of programming and studying...
+      </motion.h1>
+
+      <motion.div
+        className="mb-12 lg:mb-8"
+        variants={ySlide}
+        initial={"hidden"}
+        whileInView={"animate"}
+        viewport={viewportSettings}
       >
         <SectionHeader headerText="music" />
         <ul>
@@ -66,8 +68,9 @@ export default function Interests() {
               rel="noopener noreferrer"
               className="underline font-extrabold"
             >
-              uci anteater band (student manager + web developer)
-            </a>
+              uci anteater band
+            </a>{" "}
+            (student manager + web developer)
           </li>
 
           <li>
@@ -95,14 +98,11 @@ export default function Interests() {
       </motion.div>
 
       <motion.div
-        className="mb-10"
+        className="mb-12 lg:mb-8"
         variants={ySlide}
         initial={"hidden"}
         whileInView={"animate"}
-        viewport={{
-          once: true,
-          amount: 0.5,
-        }}
+        viewport={viewportSettings}
       >
         <SectionHeader headerText="gaming" />
         <ul>
@@ -121,7 +121,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=I_DsR2mZsK0"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold transition-all"
+              className="underline font-extrabold"
             >
               valorant
             </a>
@@ -148,10 +148,7 @@ export default function Interests() {
         variants={ySlide}
         initial={"hidden"}
         whileInView={"animate"}
-        viewport={{
-          once: true,
-          amount: 0.5,
-        }}
+        viewport={viewportSettings}
       >
         <SectionHeader headerText="friends + family" />
         <ul>
@@ -172,6 +169,6 @@ export default function Interests() {
           </li>
         </ul>
       </motion.div>
-    </motion.section>
+    </section>
   );
 }

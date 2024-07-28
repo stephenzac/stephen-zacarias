@@ -5,7 +5,7 @@ import "./globals.css";
 const robotoMono = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stephen Zacarias",
+  title: "Stephen Zacarias | Portfolio",
   description: "My personal portfolio!",
 };
 

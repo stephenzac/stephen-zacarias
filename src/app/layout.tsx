@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import TopScrollBar from "../components/top-scroll-bar";
 
 const robotoMono = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={robotoMono.className}>{children}</body>
+      <body className={robotoMono.className} suppressHydrationWarning={true}>
+        <TopScrollBar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 body {
-  color: gainsboro;
+  color: #d6d6d6;
 
   background-image: radial-gradient(
     #414141 1.2000000000000002px,
     #191919 1.2000000000000002px
   );
   background-size: 24px 24px;
+}
+
+.link-hover {
+  @apply hover:text-lighterAccent transition-all;
 }
 
 @layer utilities {
@@ -46,5 +50,11 @@ body {
     color: #b0f2f7;
     margin-left: 16px;
     font-size: 16px;
+  }
+
+  .blurred-backdrop {
+    background-color: rgba(224, 165, 27, 0.7);
+    -webkit-backdrop-filter: blur(4px) !important;
+    backdrop-filter: blur(4px) !important;
   }
 }

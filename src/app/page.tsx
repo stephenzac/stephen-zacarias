@@ -7,8 +7,6 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <main className="flex flex-col items-center h-auto w-auto pb-4">
-      <TopScrollBar />
-
       {/* About */}
       <About />
 

@@ -42,7 +42,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=PM5NgQcdWqM"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold ransition-all"
+              className="underline font-extrabold ransition-all link-hover"
             >
               playing trombone
             </a>
@@ -54,7 +54,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=Ic0FsCs-R6Y"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold"
+              className="underline font-extrabold link-hover"
             >
               {`L.A studio jazz trombonists`}
             </a>
@@ -66,7 +66,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=TsCuT2j36-w&list=PLHFy1972idO-sEZCZxF_o3o3UpMEsm6b6&index=13"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold"
+              className="underline font-extrabold link-hover"
             >
               uci anteater band
             </a>{" "}
@@ -83,14 +83,14 @@ export default function Interests() {
 
           <li>
             <ListPlus />
-            {`my spotify profile `}
+            check out my{" "}
             <a
               href="https://open.spotify.com/user/cheesehugger1"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold"
+              className="underline font-extrabold link-hover"
             >
-              here
+              spotify profile
             </a>
             {` (bruno mars and la la land enthusiast)`}
           </li>
@@ -121,7 +121,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=I_DsR2mZsK0"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold"
+              className="underline font-extrabold link-hover"
             >
               valorant
             </a>
@@ -134,7 +134,7 @@ export default function Interests() {
               href="https://www.youtube.com/watch?v=5HOU8SykHzg"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-extrabold"
+              className="underline font-extrabold link-hover"
             >
               minesweeper speedrunning
             </a>

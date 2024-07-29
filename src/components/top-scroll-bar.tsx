@@ -6,7 +6,7 @@ export default function TopScrollBar() {
 
   return (
     <motion.div
-      className="fixed top-0 w-full h-4 origin-center backdrop-blur-sm bg-amber-300/60"
+      className="fixed top-0 w-full h-[15px] origin-center blurred-backdrop"
       style={{
         scaleX: scrollYProgress,
       }}

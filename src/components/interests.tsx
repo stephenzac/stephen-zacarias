@@ -161,7 +161,7 @@ export default function Interests() {
           </li>
 
           <li>
-            <ListPlus /> going to new places
+            <ListPlus /> checking out new places
           </li>
 
           <li>

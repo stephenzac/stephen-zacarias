@@ -42,22 +42,8 @@ export const projects: Project[] = [
     projectName: "Soundle",
     projectLink: "https://stephenzac.github.io/soundle",
     projectDescription:
-      "A wordle-like ear training game to challenge and improve your sense of pitch",
+      "A Wordle-like ear training game to challenge and improve your sense of pitch",
     skills: ["React", "Typescript", "Tailwind CSS", "Vite", "GitHub Pages"],
-  },
-
-  {
-    projectName: "This website",
-    projectLink: "",
-    projectDescription:
-      "My personal portfolio, built using Next.js, Framer Motion, TypeScript, react-icons, and Vercel for deployment",
-    skills: [
-      "Next.js",
-      "Typescript",
-      "Vercel",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
   },
   {
     projectName: "Anteater Band Website",
@@ -70,6 +56,19 @@ export const projects: Project[] = [
       "Contentful",
       "Chakra UI",
       "Emotion",
+    ],
+  },
+  {
+    projectName: "This website",
+    projectLink: "",
+    projectDescription:
+      "My personal portfolio, built using Next.js, Framer Motion, TypeScript, react-icons, and Vercel for deployment",
+    skills: [
+      "Next.js",
+      "Typescript",
+      "Vercel",
+      "Tailwind CSS",
+      "Framer Motion",
     ],
   },
   {

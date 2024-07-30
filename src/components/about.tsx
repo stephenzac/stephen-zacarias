@@ -58,7 +58,7 @@ export default function About() {
           width={225}
           alt="Picture of Stephen smiling"
           priority={true}
-          className="w-48 h-auto mb-8 border-4 border-solid border-accent overflow-hidden rounded-lg"
+          className="w-48 h-auto mb-8 border-4 border-solid border-accent overflow-hidden rounded-md"
         />
       </motion.div>
 

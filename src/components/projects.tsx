@@ -26,9 +26,10 @@ export default function Projects() {
       <div className="flex flex-wrap items-center justify-center gap-10 mb-28">
         {projects.map((project: Project, projectIdx) => {
           return (
+            // Project div
             <motion.div
               key={projectIdx}
-              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-lg border-2 pt-2 pb-3"
+              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2 pb-3"
               variants={projectVariant}
               initial={"hidden"}
               whileInView={"animate"}

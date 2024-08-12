@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Links from "./links";
+import Picture from "./picture";
+import IntroText from "./intro-text";
 
 export default function About() {
   const introductionWords = ["Hey,", "I'm", "Stephen!"];
@@ -45,46 +46,11 @@ export default function About() {
         <Links />
       </motion.div>
 
-      <motion.div
-        className="flex flex-col place-items-center self-center"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <Image
-          src="/stephen.JPG"
-          height={225}
-          width={225}
-          alt="Picture of Stephen smiling"
-          priority={true}
-          className="w-48 h-auto mb-8 border-4 border-solid border-accent overflow-hidden rounded-md"
-        />
-      </motion.div>
+      {/* Picture of me */}
+      <Picture />
 
       {/* About paragraph */}
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 0.5,
-          },
-        }}
-        viewport={{ once: true }}
-        className="flex flex-col gap-20 items-center w-4/5"
-      >
-        <p className="text-center responsive-text w-full lg:w-4/6">
-          {`I'm`} a fourth year Computer Science major at the University of
-          California, Irvine. I have a particular interest in developing web
-          applications, with experience in developing with React, Typescript,
-          Next.js, Tailwind CSS, and HTML/CSS.
-        </p>
-      </motion.div>
+      <IntroText />
     </header>
   );
 }

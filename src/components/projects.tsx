@@ -54,12 +54,12 @@ export default function Projects() {
               {/* Line underneath title */}
               <div className="bg-gray-200 h-[2px] w-9/12 mx-4 mt-1"></div>
 
-              <div className="flex flex-col gap-3 justify-center h-full py-2">
+              <div className="flex flex-col gap-3 justify-center h-full py-2 px-3">
                 {/* Project description  */}
                 <p className="font-normal mx-3">{project.projectDescription}</p>
 
                 {/* Project skills  */}
-                <div className="flex flex-row justify-center flex-wrap gap-3 mx-2">
+                <div className="flex flex-row justify-center flex-wrap gap-3">
                   {project.skills.map((skill, skillIdx) => {
                     return <ProjectSkill skill={skill} key={skillIdx} />;
                   })}

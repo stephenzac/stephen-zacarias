@@ -23,13 +23,13 @@ export default function Projects() {
     >
       <h1 className="section-header">Projects</h1>
 
-      <div className="flex flex-wrap items-center justify-center gap-10 mb-28">
+      <div className="flex flex-wrap items-stretch justify-center gap-10 mb-28">
         {projects.map((project: Project, projectIdx) => {
           return (
             // Project div
             <motion.div
               key={projectIdx}
-              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2 pb-3"
+              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2"
               variants={projectVariant}
               initial={"hidden"}
               whileInView={"animate"}
@@ -52,14 +52,14 @@ export default function Projects() {
               )}
 
               {/* Line underneath title */}
-              <div className="bg-gray-200 h-[2px] w-9/12 mx-4 mt-1 mb-2"></div>
+              <div className="bg-gray-200 h-[2px] w-9/12 mx-4 mt-1"></div>
 
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col gap-3 justify-center h-full py-2">
                 {/* Project description  */}
                 <p className="font-normal mx-3">{project.projectDescription}</p>
 
                 {/* Project skills  */}
-                <div className="flex flex-row justify-center flex-wrap gap-3 mt-4 mx-2">
+                <div className="flex flex-row justify-center flex-wrap gap-3 mx-2">
                   {project.skills.map((skill, skillIdx) => {
                     return <ProjectSkill skill={skill} key={skillIdx} />;
                   })}

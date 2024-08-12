@@ -48,7 +48,8 @@ export const projects: Project[] = [
   {
     projectName: "Anteater Band Website",
     projectLink: "",
-    projectDescription: "Under construction...",
+    projectDescription:
+      "Ongoing collaborative project to develop and maintain a website for the UC Irvine Anteater Band using Next.js and Contentful (under construction)",
     skills: [
       "Next.js",
       "TypeScript",
@@ -57,6 +58,13 @@ export const projects: Project[] = [
       "Chakra UI",
       "Emotion",
     ],
+  },
+  {
+    projectName: "Sentimentify",
+    projectLink: "https://github.com/stephenzac/Sentimentify",
+    projectDescription:
+      "An application to analyze the feel of your Spotify playlists, developed for ICSSC's week-long WebJam 2023",
+    skills: ["Python", "Flask", "REST APIs", "Beautiful Soup"],
   },
   {
     projectName: "This website",
@@ -70,12 +78,5 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Framer Motion",
     ],
-  },
-  {
-    projectName: "Sentimentify",
-    projectLink: "https://github.com/stephenzac/Sentimentify",
-    projectDescription:
-      "An application to analyze the feel of your Spotify playlists, developed for ICSSC's week-long WebJam 2023",
-    skills: ["Python", "Flask", "REST APIs", "Beautiful Soup"],
   },
 ];

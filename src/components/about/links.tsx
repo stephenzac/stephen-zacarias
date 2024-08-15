@@ -1,4 +1,4 @@
-import { MyLinks, links } from "../utils";
+import { MyLinks, links } from "../../utils/index";
 
 export default function Links() {
   return (

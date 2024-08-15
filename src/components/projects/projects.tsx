@@ -1,5 +1,5 @@
 "use client";
-import { Project, projects } from "../utils";
+import { Project, projects } from "../../utils/index";
 import { motion } from "framer-motion";
 import { GoLinkExternal } from "react-icons/go";
 import ProjectSkill from "./project-skill";

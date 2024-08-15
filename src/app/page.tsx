@@ -1,8 +1,7 @@
-import TopScrollBar from "../components/top-scroll-bar";
-import Projects from "../components/projects";
-import About from "../components/about";
-import Interests from "../components/interests";
-import Footer from "../components/footer";
+import Projects from "../components/projects/projects";
+import About from "../components/about/about";
+import Interests from "../components/interests/interests";
+import Footer from "../components/app/footer";
 
 export default function Home() {
   return (

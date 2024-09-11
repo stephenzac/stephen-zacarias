@@ -1,6 +1,6 @@
-import { MyLinks, links } from "../../utils/index";
+import { MyLinks, links } from '../../utils/index';
 
-export default function Links() {
+export const Links: React.FC = () => {
   return (
     <div className="flex flex-wrap justify-center w-full lg:w-4/5 gap-4 self-center">
       {links.map((link: MyLinks) => {
@@ -20,4 +20,4 @@ export default function Links() {
       })}
     </div>
   );
-}
+};

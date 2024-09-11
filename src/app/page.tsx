@@ -1,18 +1,9 @@
-import Projects from "../components/projects/projects";
-import About from "../components/about/about";
-import Interests from "../components/interests/interests";
+import { About } from '../components/about/about';
 
-export default function Home() {
-  return (
-    <main className="flex flex-col items-center pb-4">
-      {/* About */}
-      <About />
+const Home: React.FC = () => (
+  <main className="flex flex-col items-center pb-4">
+    <About />
+  </main>
+);
 
-      {/* Projects */}
-      {/* <Projects /> */}
-
-      {/* Interests section */}
-      {/* <Interests /> */}
-    </main>
-  );
-}
+export default Home;

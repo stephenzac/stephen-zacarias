@@ -1,11 +1,12 @@
-"use client";
-import { motion } from "framer-motion";
-import Links from "./links";
-import Picture from "./picture";
-import IntroText from "./intro-text";
+'use client';
 
-export default function About() {
-  const introductionWords = ["Hey,", "I'm", "Stephen!"];
+import { motion } from 'framer-motion';
+import { Links } from './links';
+import { Picture } from './picture';
+import { IntroText } from './intro-text';
+
+export const About: React.FC = () => {
+  const introductionWords = ['Hey,', "I'm", 'Stephen!'];
 
   return (
     <header className="flex flex-wrap items-center justify-center w-full gap-5 pr-1 mb-20 mt-8 lg:mt-16 lg:mb-32">
@@ -37,7 +38,7 @@ export default function About() {
                 }}
               >
                 {text}
-                {index === introductionWords.length - 1 ? "" : "\u00A0"}
+                {index === introductionWords.length - 1 ? '' : '\u00A0'}
               </motion.span>
             ))}
           </motion.div>
@@ -53,4 +54,4 @@ export default function About() {
       <IntroText />
     </header>
   );
-}
+};

@@ -17,9 +17,9 @@ export const MyProjects: React.FC = () => {
 
   return (
     <motion.section variants={projectVariant} initial="hidden" whileInView="animate" viewport={{ once: true }}>
-      <h1 className="section-header">Projects</h1>
+      <h2 className="section-header">Projects</h2>
 
-      <div className="flex flex-wrap items-stretch justify-center gap-10 mb-28">
+      <div className="flex flex-wrap items-stretch justify-center gap-10">
         {projects.map((project: Project) => {
           return (
             <motion.div

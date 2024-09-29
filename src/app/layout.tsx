@@ -23,10 +23,8 @@ export default function RootLayout({
       <body className={robotoMono.className} suppressHydrationWarning={true}>
         <TopScrollBar />
         <NavBar />
-        <MainContainer>
-          {children}
-          <Footer />
-        </MainContainer>
+        <MainContainer>{children}</MainContainer>
+        <Footer />
       </body>
     </html>
   );

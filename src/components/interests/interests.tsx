@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { SectionHeader } from './section-header';
 import { InterestsListElement } from './interests-list-element';
+import { motion } from 'framer-motion';
 
 export const MyInterests: React.FC = () => {
   const ySlide = {
@@ -16,8 +16,8 @@ export const MyInterests: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col w-4/5 mb-16 responsive-text text-left md:text-left">
-      <motion.h1
+    <section className="flex flex-col w-4/5 responsive-text text-left md:text-left">
+      <motion.h2
         className="section-header self-start text-balance font-black"
         variants={ySlide}
         initial="hidden"
@@ -26,7 +26,7 @@ export const MyInterests: React.FC = () => {
         transition={{ duration: 0.4 }}
       >
         Outside of programming and studying...
-      </motion.h1>
+      </motion.h2>
 
       <motion.div
         className="mb-12 lg:mb-8"
@@ -141,11 +141,11 @@ export const MyInterests: React.FC = () => {
       >
         <SectionHeader>friends + family</SectionHeader>
         <ul>
-          <InterestsListElement>eating, cooking (big foodie)</InterestsListElement>
-
           <InterestsListElement>going out</InterestsListElement>
 
           <InterestsListElement>checking out new places</InterestsListElement>
+
+          <InterestsListElement>eating, cooking (big foodie)</InterestsListElement>
 
           <InterestsListElement>shenanigans :D</InterestsListElement>
         </ul>

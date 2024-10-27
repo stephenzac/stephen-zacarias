@@ -6,7 +6,7 @@ import { InterestsListElement } from './interests-list-element';
 
 export const Interests: React.FC = () => {
   const ySlide = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
   };
 

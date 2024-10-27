@@ -7,7 +7,7 @@ import ProjectSkill from './project-skill';
 
 export const Projects: React.FC = () => {
   const projectVariant = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -25 },
     animate: {
       opacity: 1,
       x: 0,

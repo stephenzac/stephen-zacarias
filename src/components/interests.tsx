@@ -17,16 +17,9 @@ export const Interests: React.FC = () => {
 
   return (
     <section className='flex flex-col w-4/5 mb-16 responsive-text text-left md:text-left'>
-      <motion.h1
-        className='section-header self-start text-balance font-black'
-        variants={ySlide}
-        initial='hidden'
-        whileInView='animate'
-        viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
-      >
+      <h2 className='section-header self-start text-balance font-black'>
         Outside of programming and studying...
-      </motion.h1>
+      </h2>
 
       <motion.div
         className='mb-12 lg:mb-8'

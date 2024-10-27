@@ -47,10 +47,8 @@ export const About: React.FC = () => {
         <Links />
       </motion.div>
 
-      {/* Picture of me */}
       <Picture />
 
-      {/* About paragraph */}
       <IntroText />
     </header>
   );

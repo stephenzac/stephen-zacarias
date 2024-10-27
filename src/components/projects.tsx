@@ -22,7 +22,7 @@ export const Projects: React.FC = () => {
       whileInView='animate'
       viewport={{ once: true }}
     >
-      <h1 className='section-header'>Projects</h1>
+      <h2 className='section-header'>Projects</h2>
 
       <div className='flex flex-wrap items-stretch justify-center gap-10 mb-28'>
         {projects.map((project) => (
@@ -35,9 +35,9 @@ export const Projects: React.FC = () => {
             viewport={{ once: true, amount: 0.11 }}
           >
             {project.projectLink === '' ? (
-              <h2 className='project-header flex flex-row items-center gap-2 hover:scale-110 link-hover cursor-pointer'>
+              <h3 className='project-header flex flex-row items-center gap-2 hover:scale-110 link-hover cursor-pointer'>
                 {project.projectName}
-              </h2>
+              </h3>
             ) : (
               <a
                 href={project.projectLink}
@@ -53,10 +53,8 @@ export const Projects: React.FC = () => {
             <div className='bg-gray-200 h-[2px] w-9/12 mx-4 mt-1' />
 
             <div className='flex flex-col gap-3 justify-center h-full py-2 px-3'>
-              {/* Project description  */}
               <p className='font-normal mx-3'>{project.projectDescription}</p>
 
-              {/* Project skills  */}
               <div className='flex flex-row justify-center flex-wrap gap-3'>
                 {project.skills.map((skill) => (
                   <ProjectSkill skill={skill} key={skill} />

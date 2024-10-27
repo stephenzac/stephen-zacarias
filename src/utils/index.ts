@@ -43,28 +43,42 @@ export const projects: Project[] = [
   {
     projectName: 'Soundle',
     projectLink: 'https://stephenzac.github.io/soundle',
-    projectDescription: 'A Wordle-like ear training game to challenge and improve your sense of pitch',
+    projectDescription:
+      'An independently developed, interactive Wordle-like ear training game designed to help users improve their pitch recognition skills',
     skills: ['React', 'Typescript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
   },
   {
     projectName: 'Anteater Band Website',
     projectLink: 'https://uciband.com',
     projectDescription:
-      'Ongoing collaborative project to develop and maintain a website for the UC Irvine Anteater Band using Next.js and Contentful (under construction)',
-    skills: ['Next.js', 'TypeScript', 'GraphQL', 'Contentful', 'Chakra UI', 'Emotion'],
+      'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band',
+    skills: [
+      'Next.js',
+      'TypeScript',
+      'Apollo GraphQL',
+      'Contentful',
+      'Chakra UI',
+      'Emotion',
+    ],
   },
   {
     projectName: 'Sentimentify',
     projectLink: 'https://github.com/stephenzac/Sentimentify',
     projectDescription:
-      "An application to analyze the feel of your Spotify playlists, developed for ICSSC's week-long WebJam 2023",
-    skills: ['Python', 'Flask', 'REST APIs', 'Beautiful Soup'],
+      'Collaborative web application developed for the five-day ICSSC WebJam 2023, designed to analyze the mood and energy of Spotify playlists',
+    skills: ['Python', 'Rest APIs', 'Flask', 'Beautiful Soup'],
   },
   {
     projectName: 'This website',
     projectLink: '',
     projectDescription:
       'My personal portfolio, built using Next.js, Framer Motion, TypeScript, react-icons, and Vercel for deployment',
-    skills: ['Next.js', 'Typescript', 'Vercel', 'Tailwind CSS', 'Framer Motion'],
+    skills: [
+      'Next.js',
+      'Typescript',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Vercel',
+    ],
   },
 ];

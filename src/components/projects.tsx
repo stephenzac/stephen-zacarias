@@ -1,12 +1,13 @@
-"use client";
-import { Project, projects } from "../utils";
-import { motion } from "framer-motion";
-import { GoLinkExternal } from "react-icons/go";
-import ProjectSkill from "./project-skill";
+'use client';
 
-export default function Projects() {
+import { projects } from '../utils';
+import { motion } from 'framer-motion';
+import { GoLinkExternal } from 'react-icons/go';
+import ProjectSkill from './project-skill';
+
+export const Projects: React.FC = () => {
   const projectVariant = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -50 },
     animate: {
       opacity: 1,
       x: 0,
@@ -15,60 +16,56 @@ export default function Projects() {
   };
 
   return (
-    <motion.section
-      variants={projectVariant}
-      initial={"hidden"}
-      whileInView={"animate"}
-      viewport={{ once: true }}
-    >
-      <h1 className="section-header">Projects</h1>
+    <section>
+      <h2 className='section-header'>Projects</h2>
 
-      <div className="flex flex-wrap items-stretch justify-center gap-10 mb-28">
-        {projects.map((project: Project, projectIdx) => {
-          return (
-            // Project div
-            <motion.div
-              key={projectIdx}
-              className="flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2"
+      <motion.div
+        variants={projectVariant}
+        initial='hidden'
+        whileInView='animate'
+        viewport={{ once: true }}
+      >
+        <div className='flex flex-wrap items-stretch justify-center gap-10 mb-28'>
+          {projects.map((project) => (
+            <motion.article
+              key={project.projectName}
+              className='flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2'
               variants={projectVariant}
-              initial={"hidden"}
-              whileInView={"animate"}
+              initial='hidden'
+              whileInView='animate'
               viewport={{ once: true, amount: 0.11 }}
             >
-              {/* Project title  */}
-              {project.projectLink === "" ? (
-                <h1 className="project-header flex flex-row items-center gap-2 hover:scale-110 link-hover cursor-pointer">
+              {project.projectLink === '' ? (
+                <h3 className='project-header flex flex-row items-center gap-2 hover:scale-110 link-hover cursor-pointer'>
                   {project.projectName}
-                </h1>
+                </h3>
               ) : (
                 <a
                   href={project.projectLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-header flex flex-row items-center gap-2 hover:scale-110 link-hover"
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='project-header flex flex-row items-center gap-2 hover:scale-110 link-hover'
                 >
                   {project.projectName} <GoLinkExternal />
                 </a>
               )}
 
               {/* Line underneath title */}
-              <div className="bg-gray-200 h-[2px] w-9/12 mx-4 mt-1"></div>
+              <div className='bg-gray-200 h-[2px] w-9/12 mx-4 mt-1' />
 
-              <div className="flex flex-col gap-3 justify-center h-full py-2 px-3">
-                {/* Project description  */}
-                <p className="font-normal mx-3">{project.projectDescription}</p>
+              <div className='flex flex-col gap-3 justify-center h-full py-2 px-3'>
+                <p className='font-normal mx-3'>{project.projectDescription}</p>
 
-                {/* Project skills  */}
-                <div className="flex flex-row justify-center flex-wrap gap-3">
-                  {project.skills.map((skill, skillIdx) => {
-                    return <ProjectSkill skill={skill} key={skillIdx} />;
-                  })}
+                <div className='flex flex-row justify-center flex-wrap gap-3'>
+                  {project.skills.map((skill) => (
+                    <ProjectSkill skill={skill} key={skill} />
+                  ))}
                 </div>
               </div>
-            </motion.div>
-          );
-        })}
-      </div>
-    </motion.section>
+            </motion.article>
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
-}
+};

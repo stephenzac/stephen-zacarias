@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
-import TopScrollBar from "../components/top-scroll-bar";
+import type { Metadata } from 'next';
+import { Roboto_Mono } from 'next/font/google';
+import './globals.css';
+import TopScrollBar from '../components/top-scroll-bar';
 
-const robotoMono = Roboto_Mono({ weight: "400", subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Stephen Zacarias | Portfolio",
-  description: "My personal portfolio!",
+  title: 'Stephen Zacarias | Portfolio',
+  description: 'The personal portfolio of Stephen Zacarias',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={robotoMono.className} suppressHydrationWarning={true}>
         <TopScrollBar />
         {children}

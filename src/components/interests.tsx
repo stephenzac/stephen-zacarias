@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import SectionHeader from './section-header';
-import ListPlus from './list-plus';
+import { InterestsSectionHeader } from './section-header';
+import { InterestsListElement } from './interests-list-element';
 
-export default function Interests() {
+export const Interests: React.FC = () => {
   const ySlide = {
     hidden: { opacity: 0, y: 100 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
@@ -35,10 +35,9 @@ export default function Interests() {
         whileInView='animate'
         viewport={viewportSettings}
       >
-        <SectionHeader headerText='music' />
+        <InterestsSectionHeader>music</InterestsSectionHeader>
         <ul>
-          <li>
-            <ListPlus />
+          <InterestsListElement>
             <a
               href='https://www.youtube.com/watch?v=PM5NgQcdWqM'
               target='_blank'
@@ -47,10 +46,10 @@ export default function Interests() {
             >
               playing trombone
             </a>
-          </li>
+          </InterestsListElement>
 
-          <li>
-            <ListPlus /> influenced by sound and nuances of{' '}
+          <InterestsListElement>
+            influenced by sound and nuances of{' '}
             <a
               href='https://www.youtube.com/watch?v=Ic0FsCs-R6Y'
               target='_blank'
@@ -59,10 +58,9 @@ export default function Interests() {
             >
               L.A studio jazz trombonists
             </a>
-          </li>
+          </InterestsListElement>
 
-          <li>
-            <ListPlus />
+          <InterestsListElement>
             <a
               href='https://uciband.com/staff'
               target='_blank'
@@ -72,18 +70,17 @@ export default function Interests() {
               uci anteater band
             </a>{' '}
             (student manager + web developer)
-          </li>
+          </InterestsListElement>
 
-          <li>
-            <ListPlus /> uci jazz orchestra (briefly)
-          </li>
+          <InterestsListElement>
+            uci jazz orchestra (briefly)
+          </InterestsListElement>
 
-          <li>
-            <ListPlus /> uci wind ensemble (occasionally)
-          </li>
+          <InterestsListElement>
+            uci wind ensemble (occasionally)
+          </InterestsListElement>
 
-          <li>
-            <ListPlus />
+          <InterestsListElement>
             check out my{' '}
             <a
               href='https://open.spotify.com/user/cheesehugger1'
@@ -94,7 +91,7 @@ export default function Interests() {
               spotify profile
             </a>{' '}
             (bruno mars and la la land enthusiast)
-          </li>
+          </InterestsListElement>
         </ul>
       </motion.div>
 
@@ -105,19 +102,18 @@ export default function Interests() {
         whileInView='animate'
         viewport={viewportSettings}
       >
-        <SectionHeader headerText='gaming' />
+        <InterestsSectionHeader>gaming</InterestsSectionHeader>
         <ul>
-          <li>
-            <ListPlus /> favorite game genre: fps games
-          </li>
+          <InterestsListElement>
+            favorite game genre: fps games
+          </InterestsListElement>
 
-          <li>
-            <ListPlus /> aiming for the best strategies, teamwork, and mechanics
-            in the game server to win
-          </li>
+          <InterestsListElement>
+            aiming for the best strategies, teamwork, and mechanics in the game
+            server to win
+          </InterestsListElement>
 
-          <li>
-            <ListPlus />
+          <InterestsListElement>
             <a
               href='https://www.youtube.com/watch?v=I_DsR2mZsK0'
               target='_blank'
@@ -127,10 +123,9 @@ export default function Interests() {
               valorant
             </a>
             , csgo, overwatch, pokémon, skyrim, fallout enjoyer
-          </li>
+          </InterestsListElement>
 
-          <li>
-            <ListPlus />
+          <InterestsListElement>
             <a
               href='https://www.youtube.com/watch?v=5HOU8SykHzg'
               target='_blank'
@@ -140,7 +135,7 @@ export default function Interests() {
               minesweeper speedrunning
             </a>{' '}
             (previously top 10 in google minesweeper)
-          </li>
+          </InterestsListElement>
         </ul>
       </motion.div>
 
@@ -151,30 +146,21 @@ export default function Interests() {
         whileInView='animate'
         viewport={viewportSettings}
       >
-        <SectionHeader headerText='friends + family' />
+        <InterestsSectionHeader>friends + family</InterestsSectionHeader>
         <ul>
-          <li>
-            <ListPlus /> eating, cooking (big foodie)
-          </li>
+          <InterestsListElement>
+            eating, cooking (big foodie)
+          </InterestsListElement>
 
-          <li>
-            <ListPlus /> going out
-          </li>
+          <InterestsListElement>going out</InterestsListElement>
 
-          <li>
-            <ListPlus />
-            more gaming
-          </li>
+          <InterestsListElement>more gaming</InterestsListElement>
 
-          <li>
-            <ListPlus /> checking out new places
-          </li>
+          <InterestsListElement>checking out new places</InterestsListElement>
 
-          <li>
-            <ListPlus /> shenanigans :D
-          </li>
+          <InterestsListElement>shenanigans :D</InterestsListElement>
         </ul>
       </motion.div>
     </section>
   );
-}
+};

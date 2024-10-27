@@ -1,11 +1,13 @@
-type SectionHeaderProps = {
-  headerText: string;
-};
+interface SectionHeaderProps {
+  children?: React.ReactNode;
+}
 
-export default function SectionHeader({ headerText }: SectionHeaderProps) {
+export const InterestsSectionHeader: React.FC<SectionHeaderProps> = ({
+  children,
+}) => {
   return (
-    <h1 className="text-xl font-extrabold md:text-2xl text-lighterAccent">
-      {headerText}
+    <h1 className='text-xl font-extrabold md:text-2xl text-lighterAccent'>
+      {children}
     </h1>
   );
-}
+};

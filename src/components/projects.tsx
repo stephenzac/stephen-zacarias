@@ -3,7 +3,7 @@
 import { projects } from '../utils';
 import { motion } from 'framer-motion';
 import { GoLinkExternal } from 'react-icons/go';
-import ProjectSkill from './project-skill';
+import { ProjectSkill } from './projects/project-skill';
 
 export const Projects: React.FC = () => {
   const projectVariant = {
@@ -58,7 +58,7 @@ export const Projects: React.FC = () => {
 
                 <div className='flex flex-row justify-center flex-wrap gap-3'>
                   {project.skills.map((skill) => (
-                    <ProjectSkill skill={skill} key={skill} />
+                    <ProjectSkill key={skill}>{skill}</ProjectSkill>
                   ))}
                 </div>
               </div>

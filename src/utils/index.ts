@@ -2,42 +2,42 @@ import { IconType } from 'react-icons';
 import { AiFillLinkedin, AiFillSpotify, AiFillMail } from 'react-icons/ai';
 import { DiGithubBadge } from 'react-icons/di';
 
-export type MyLinks = {
+export interface PersonalLink {
   linkText: string;
   link: string;
-  linkIcon: IconType;
-};
+  icon: IconType;
+}
 
-export const links: MyLinks[] = [
+export const personalLinks: PersonalLink[] = [
   {
     linkText: 'GitHub',
     link: 'https://github.com/stephenzac',
-    linkIcon: DiGithubBadge,
+    icon: DiGithubBadge,
   },
 
   {
     linkText: 'LinkedIn',
     link: 'https://linkedin.com/in/stephen-zac',
-    linkIcon: AiFillLinkedin,
+    icon: AiFillLinkedin,
   },
   {
     linkText: 'Spotify',
     link: 'https://open.spotify.com/user/cheesehugger1',
-    linkIcon: AiFillSpotify,
+    icon: AiFillSpotify,
   },
   {
     linkText: 'stephenzacarias2@gmail.com',
     link: 'mailto:stephenzacarias2@gmail.com',
-    linkIcon: AiFillMail,
+    icon: AiFillMail,
   },
 ];
 
-export type Project = {
+export interface Project {
   projectName: string;
   projectLink: string;
   projectDescription: string;
   skills: string[];
-};
+}
 
 export const projects: Project[] = [
   {

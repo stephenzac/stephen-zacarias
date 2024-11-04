@@ -1,17 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Links from './links';
-import Picture from './picture';
-import IntroText from './intro-text';
+import { Links } from '../app/links';
+import { Picture } from './picture';
+import { IntroText } from './intro-text';
 
 export const About: React.FC = () => {
   const introductionWords = ['Hello,', "I'm", 'Stephen!'];
 
   return (
     <header className='flex flex-wrap items-center justify-center w-full gap-5 pr-1 mt-8 lg:mt-16'>
-      <div className='flex flex-wrap text-center justify-center lg:w-4/12'>
-        <h1 className='flex flex-row responsive-header text-center pb-4 font-black'>
+      <div className='text-center justify-center lg:w-4/12'>
+        <h1 className='flex-row responsive-header text-center pb-4 font-black'>
           <motion.div
             initial='before'
             animate='after'

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { InterestsSectionHeader } from './section-header';
+import { InterestsSectionHeader } from '../app/section-header';
 import { InterestsListElement } from './interests-list-element';
 
 export const Interests: React.FC = () => {

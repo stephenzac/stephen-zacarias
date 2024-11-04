@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
-import TopScrollBar from '../components/top-scroll-bar';
+import { TopScrollBar } from '../components/app/top-scroll-bar';
 
 const robotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] });
 

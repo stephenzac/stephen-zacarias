@@ -1,16 +1,18 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Links } from '../app/links';
+import { Links } from './links';
 import { Picture } from './picture';
 import { IntroText } from './intro-text';
+import { NewProjectCard } from '../projects/new-project-card';
+import { NewLinks } from './new-links';
 
 export const About: React.FC = () => {
   const introductionWords = ['Hello,', "I'm", 'Stephen!'];
 
   return (
-    <header className='flex flex-wrap items-center justify-center w-full gap-5 pr-1 mt-8 lg:mt-16'>
-      <div className='text-center justify-center lg:w-4/12'>
+    <header className='flex flex-col items-center justify-center w-full gap-5 mt-8 lg:mt-16'>
+      {/* <div className='text-center justify-center lg:w-4/12'>
         <h1 className='flex-row responsive-header text-center pb-4 font-black'>
           <motion.div
             initial='before'
@@ -37,9 +39,15 @@ export const About: React.FC = () => {
         </h1>
 
         <Links />
+      </div> */}
+
+      <div className='flex flex-row'>
+        <div className='text-box w-60 h-16'>Hey, I&apos;m Stephen!</div>
       </div>
 
       <Picture />
+
+      <NewLinks />
 
       <IntroText />
     </header>

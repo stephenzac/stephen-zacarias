@@ -36,6 +36,10 @@ body {
   @apply hover:text-lighterAccent transition-all;
 }
 
+.text-box {
+  @apply px-6 py-4 rounded-md border-8 border-double border-accent bg-zinc-700 text-slate-100;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
           {projects.map((project) => (
             <motion.article
               key={project.projectName}
-              className='flex flex-col items-center text-center w-3/4 sm:w-2/5 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2'
+              className='flex flex-col items-center text-center w-3/4 sm:w-2/5 min-h-48 bg-neutral-700 text-gray-200 transition-colors font-semibold rounded-md border-2 pt-2'
               variants={projectVariant}
               initial='hidden'
               whileInView='animate'

@@ -1,6 +1,6 @@
 'use client';
 
-import { projects } from '../../utils';
+import { projects } from '@/utils';
 import { motion } from 'framer-motion';
 import { ProjectCard } from './project-card';
 
@@ -13,33 +13,31 @@ const projectVariant = {
   },
 };
 
-export const Projects: React.FC = () => {
-  return (
-    <section>
-      <h2 className='section-header'>Projects</h2>
+export const Projects: React.FC = () => (
+  <section>
+    <h2 className='section-header'>Projects</h2>
 
-      <motion.div
-        variants={projectVariant}
-        initial='hidden'
-        whileInView='animate'
-        viewport={{ once: true }}
-      >
-        <div className='flex flex-wrap items-stretch justify-center gap-10 mb-28'>
-          {projects.map((project) => {
-            const { title, link, description, skills } = project;
+    <motion.div
+      variants={projectVariant}
+      initial='hidden'
+      whileInView='animate'
+      viewport={{ once: true }}
+    >
+      <div className='flex flex-wrap items-stretch justify-center gap-10 mb-28'>
+        {projects.map((project) => {
+          const { title, link, description, skills } = project;
 
-            return (
-              <ProjectCard
-                title={title}
-                link={link}
-                description={description}
-                skills={skills}
-                key={title}
-              />
-            );
-          })}
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+          return (
+            <ProjectCard
+              title={title}
+              link={link}
+              description={description}
+              skills={skills}
+              key={title}
+            />
+          );
+        })}
+      </div>
+    </motion.div>
+  </section>
+);

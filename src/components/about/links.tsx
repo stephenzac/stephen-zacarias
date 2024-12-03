@@ -1,7 +1,7 @@
 import { personalLinks } from '../../utils';
 
 export const Links: React.FC = () => (
-  <div className='flex flex-wrap justify-center w-full lg:w-4/5 gap-4 self-center'>
+  <div className='flex flex-wrap justify-center items-center w-full lg:w-4/5 gap-4 self-center'>
     {personalLinks.map((linkData) => (
       <div key={linkData.link}>
         <a

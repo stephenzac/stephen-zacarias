@@ -4,10 +4,8 @@ interface SectionHeaderProps {
 
 export const InterestsSectionHeader: React.FC<SectionHeaderProps> = ({
   children,
-}) => {
-  return (
-    <h1 className='text-xl font-extrabold md:text-2xl text-lighterAccent'>
-      {children}
-    </h1>
-  );
-};
+}) => (
+  <h1 className='text-xl font-extrabold md:text-2xl text-lighterAccent'>
+    {children}
+  </h1>
+);

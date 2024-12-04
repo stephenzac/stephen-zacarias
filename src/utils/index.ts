@@ -44,14 +44,14 @@ export const projects: Project[] = [
     title: 'Soundle',
     link: 'https://stephenzac.github.io/soundle',
     description:
-      'An independently developed, interactive Wordle-like ear training game designed to help users improve their pitch recognition skills',
+      "An independently developed, interactive Wordle-like ear training game designed to challenge users' pitch recognition skills",
     skills: ['React', 'Typescript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
   },
   {
     title: 'Anteater Band Website',
     link: 'https://uciband.com',
     description:
-      'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band',
+      'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band website',
     skills: [
       'Next.js',
       'TypeScript',
@@ -59,6 +59,19 @@ export const projects: Project[] = [
       'Contentful',
       'Chakra UI',
       'Emotion',
+    ],
+  },
+  {
+    title: '🏆 Live, Laugh, Zot',
+    link: 'https://github.com/stephenzac/live-laugh-zot',
+    description:
+      "A real-time collaborative dashboard for roommates to organize their households together. Won the 1st place award at ICSSC's WebJam 2024",
+    skills: [
+      'Next.js',
+      'TypeScript',
+      'Firebase/Firestore',
+      'Gemini',
+      'Tailwind CSS',
     ],
   },
   {

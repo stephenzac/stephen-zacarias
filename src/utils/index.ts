@@ -52,7 +52,7 @@ export const projects: Project[] = [
     link: 'https://uciband.com',
     description:
       'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band website',
-    skills: ['Next.js', 'GraphQL', 'Contentful', 'Chakra', 'Emotion'],
+    skills: ['Next.js', 'GraphQL', 'Contentful', 'Chakra'],
   },
   {
     title: '🏆 Live, Laugh, Zot',

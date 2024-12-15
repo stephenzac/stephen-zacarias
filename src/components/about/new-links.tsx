@@ -1,8 +1,10 @@
+'use client';
+
 import { personalLinks } from '@/utils';
 import { motion } from 'framer-motion';
 
 export const NewLinks: React.FC = () => (
-  <div className='text-box flex flex-col items-start gap-2'>
+  <div className='flex flex-col items-start gap-2'>
     {personalLinks.map((link) => (
       <div
         className='group relative flex flex-row items-center gap-1 text-base lg:text-xl'

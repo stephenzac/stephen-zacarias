@@ -1,5 +1,5 @@
 export const Footer: React.FC = () => (
-  <footer className='flex flex-col items-start w-full text-sm text-balance px-5 mr-auto pt-4 text-gray-400'>
+  <footer className='flex flex-col items-start w-full text-sm text-balance text-gray-400'>
     <p>&copy; Stephen Zacarias 2024</p>
     <p>
       Built with{' '}

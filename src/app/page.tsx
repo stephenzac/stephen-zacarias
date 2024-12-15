@@ -2,7 +2,7 @@ import { Projects } from '@/components/projects/projects';
 import { About } from '@/components/about/about';
 import { Interests } from '@/components/interests/interests';
 import { Footer } from '@/components/app/footer';
-import { TextBox } from '@/components/app/text-box';
+// import { TextBox } from '@/components/app/text-box';
 
 export default function Home() {
   return (
@@ -13,7 +13,6 @@ export default function Home() {
 
       <Projects />
       <Interests />
-      <Footer />
     </main>
   );
 }

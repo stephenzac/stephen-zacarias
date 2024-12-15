@@ -2,7 +2,7 @@
 
 import { projects } from '@/utils';
 import { motion } from 'framer-motion';
-import { NewProjectCard } from './new-project-card';
+import { ProjectCard } from './project-card';
 
 const projectVariant = {
   hidden: { opacity: 0, x: -25 },
@@ -26,7 +26,7 @@ export const Projects: React.FC = () => (
       {/* <div className='flex flex-wrap items-stretch justify-center gap-20 mb-28'> */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((project) => (
-          <NewProjectCard
+          <ProjectCard
             key={project.title}
             title={project.title}
             link={project.link}

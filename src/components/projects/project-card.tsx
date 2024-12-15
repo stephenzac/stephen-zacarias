@@ -13,20 +13,26 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   skills,
 }) => (
-  <article className='hover:translate-y-[-8px] transition-transform duration-300 text-box px-8 w-full md:max-w-md bg-zinc-700 border-double border-accent rounded-md'>
+  <a
+    href={link ? link : undefined}
+    target='_blank'
+    rel='noreferrer'
+    className={`group hover:translate-y-[-8px] ${
+      link ? 'hover:cursor-pointer' : ''
+    } transition-transform duration-200 text-box px-8 w-full md:max-w-md bg-zinc-700 border-double border-accent rounded-md`}
+  >
     {link ? (
-      <a
-        className='group transition duration-300 flex flex-row text-xl items-center gap-2 pb-2'
-        href={link}
-        target='_blank'
-        rel='noreferrer'
-      >
+      <h2 className='group-hover:text-lighterAccent transition duration-300 flex flex-row text-xl items-center gap-2 pb-2'>
         {title}
-        <GoLinkExternal />
+        <span className='text-lighterAccent'>
+          <GoLinkExternal />
+        </span>
         <span className='block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white' />
-      </a>
+      </h2>
     ) : (
-      <p className='pb-4 text-xl'>{title}</p>
+      <h2 className='pb-4 text-xl group-hover:text-lighterAccent transition duration-300'>
+        {title}
+      </h2>
     )}
 
     <p className='pb-4 text-zinc-300'>{description}</p>
@@ -38,5 +44,5 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </p>
       ))}
     </div>
-  </article>
+  </a>
 );

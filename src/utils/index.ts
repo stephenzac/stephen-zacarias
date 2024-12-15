@@ -45,34 +45,21 @@ export const projects: Project[] = [
     link: 'https://stephenzac.github.io/soundle',
     description:
       "An independently developed, interactive Wordle-like ear training game designed to challenge users' pitch recognition skills",
-    skills: ['React', 'Typescript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
+    skills: ['React', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
   },
   {
     title: 'Anteater Band Website',
     link: 'https://uciband.com',
     description:
       'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band website',
-    skills: [
-      'Next.js',
-      'TypeScript',
-      'Apollo GraphQL',
-      'Contentful',
-      'Chakra UI',
-      'Emotion',
-    ],
+    skills: ['Next.js', 'GraphQL', 'Contentful', 'Chakra', 'Emotion'],
   },
   {
     title: '🏆 Live, Laugh, Zot',
     link: 'https://github.com/stephenzac/live-laugh-zot',
     description:
       "A real-time collaborative dashboard for roommates to organize their households together. Won the 1st place award at ICSSC's WebJam 2024",
-    skills: [
-      'Next.js',
-      'TypeScript',
-      'Firebase/Firestore',
-      'Gemini',
-      'Tailwind CSS',
-    ],
+    skills: ['Next.js', 'Firebase', 'Gemini', 'Tailwind CSS'],
   },
   {
     title: 'Sentimentify',
@@ -86,12 +73,6 @@ export const projects: Project[] = [
     link: '',
     description:
       'My personal portfolio, built using Next.js, Framer Motion, TypeScript, react-icons, and Vercel for deployment',
-    skills: [
-      'Next.js',
-      'Typescript',
-      'Tailwind CSS',
-      'Framer Motion',
-      'Vercel',
-    ],
+    skills: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
   },
 ];

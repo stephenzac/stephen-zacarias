@@ -7,7 +7,7 @@ export const TopScrollBar: React.FC = () => {
 
   return (
     <motion.div
-      className='fixed top-0 w-full h-[15px] origin-center blurred-backdrop'
+      className='fixed top-0 w-screen h-[15px] origin-center blurred-backdrop'
       style={{
         scaleX: scrollYProgress,
       }}

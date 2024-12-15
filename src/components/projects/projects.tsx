@@ -2,7 +2,7 @@
 
 import { projects } from '@/utils';
 import { motion } from 'framer-motion';
-import { ProjectCard } from './project-card';
+import { NewProjectCard } from './new-project-card';
 
 const projectVariant = {
   hidden: { opacity: 0, x: -25 },
@@ -14,7 +14,7 @@ const projectVariant = {
 };
 
 export const Projects: React.FC = () => (
-  <section>
+  <section className='mb-20 md:mb-40'>
     <h2 className='section-header'>Projects</h2>
 
     <motion.div
@@ -23,20 +23,17 @@ export const Projects: React.FC = () => (
       whileInView='animate'
       viewport={{ once: true }}
     >
-      <div className='flex flex-wrap items-stretch justify-center gap-10 mb-28'>
-        {projects.map((project) => {
-          const { title, link, description, skills } = project;
-
-          return (
-            <ProjectCard
-              title={title}
-              link={link}
-              description={description}
-              skills={skills}
-              key={title}
-            />
-          );
-        })}
+      {/* <div className='flex flex-wrap items-stretch justify-center gap-20 mb-28'> */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+        {projects.map((project) => (
+          <NewProjectCard
+            key={project.title}
+            title={project.title}
+            link={project.link}
+            description={project.description}
+            skills={project.skills}
+          />
+        ))}
       </div>
     </motion.div>
   </section>

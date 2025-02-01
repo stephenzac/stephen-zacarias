@@ -42,7 +42,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     projectName: 'Soundle',
-    projectLink: 'https://stephenzac.github.io/soundle',
+    projectLink: 'https://soundle.stephenzacarias.com',
     projectDescription:
       "An independently developed, interactive Wordle-like ear training game designed to challenge users' pitch recognition skills",
     skills: ['React', 'Typescript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],

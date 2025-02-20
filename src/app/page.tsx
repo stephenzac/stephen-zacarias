@@ -1,6 +1,6 @@
-import { Projects } from '@/components/projects/projects';
-import { About } from '@/components/about/about';
-import { Interests } from '@/components/interests/interests';
+import { Projects } from '@/components/projects';
+import { About } from '@/components/about';
+import { Interests } from '@/components/interests';
 
 export default function Home() {
   return (

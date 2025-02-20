@@ -16,7 +16,7 @@ export const IntroText: React.FC = () => (
 
     {/* triangle thing */}
     <motion.div
-      className='duration-150 w-0 aspect-square border-b-[11px] border-b-white border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent absolute bottom-5 right-4'
+      className='duration-150 w-0 aspect-square border-t-[11px] border-b-white border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent absolute bottom-2.5 right-4'
       initial={{ y: 0 }}
       variants={{
         idle: { y: 0 },

@@ -5,7 +5,7 @@ import { NewLinks } from './new-links';
 
 export const About: React.FC = () => (
   <header className='flex flex-col w-full gap-4 items-center'>
-    <div className='grid grid-cols-1 md:grid-cols-[auto,1fr] gap-x-2 gap-y-2 items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-2 gap-y-2 items-center'>
       <div className='flex justify-center'>
         <MyPicture />
       </div>

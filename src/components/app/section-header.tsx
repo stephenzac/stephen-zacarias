@@ -5,7 +5,7 @@ interface SectionHeaderProps {
 export const InterestsSectionHeader: React.FC<SectionHeaderProps> = ({
   children,
 }) => (
-  <h1 className='text-xl font-extrabold md:text-2xl text-lighterAccent'>
+  <h1 className='text-xl font-extrabold md:text-2xl text-lighter-accent'>
     {children}
   </h1>
 );

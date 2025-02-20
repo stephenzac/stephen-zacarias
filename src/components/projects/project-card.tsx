@@ -17,10 +17,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     href={link ? link : undefined}
     target='_blank'
     rel='noreferrer'
-    className={`group hover:translate-y-[-8px] ${
-      link ? 'hover:cursor-pointer' : ''
-    } transition-transform duration-200 text-box px-8 w-full md:max-w-md bg-zinc-700 border-double border-accent rounded-md`}
+    className={`group hover:scale-[1.02] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 text-box w-full md:max-w-md relative overflow-hidden`}
   >
+    <div className='absolute inset-0 bg-gradient-to-r from-transparent via-accent/10 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-300' />
     {link ? (
       <h2 className='group-hover:text-lighterAccent transition duration-300 flex flex-row text-xl items-center gap-2 pb-2'>
         {title}

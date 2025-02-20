@@ -59,7 +59,7 @@ body {
   }
 
   .responsive-text {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
   }
 
   .project-text {

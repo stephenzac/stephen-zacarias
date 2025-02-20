@@ -1,7 +1,7 @@
 import { IntroText } from './intro-text';
 
 import { MyPicture } from './my-picture';
-import { NewLinks } from './new-links';
+import { MyLinks } from './my-links';
 
 export const About: React.FC = () => (
   <header className='flex flex-col w-full gap-4 items-center'>
@@ -12,7 +12,7 @@ export const About: React.FC = () => (
 
       <div className='flex flex-col gap-3 text-box h-full'>
         <h1 className='text-xl pl-[2.2px]'>Hey, I&apos;m Stephen!</h1>
-        <NewLinks />
+        <MyLinks />
       </div>
     </div>
 

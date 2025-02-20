@@ -3,11 +3,11 @@
 import { personalLinks } from '@/utils';
 import { motion } from 'framer-motion';
 
-export const NewLinks: React.FC = () => (
+export const MyLinks: React.FC = () => (
   <div className='flex flex-col items-start gap-1'>
     {personalLinks.map((link) => (
       <div
-        className='group relative flex flex-row items-center gap-1 text-base lg:text-xl'
+        className='group relative flex flex-row items-center gap-1 text-base'
         key={link.link}
       >
         {/* triangle "selector" */}
@@ -31,7 +31,7 @@ export const NewLinks: React.FC = () => (
         />
 
         <a
-          className='flex flex-row items-center gap-1 text-base'
+          className='flex flex-row items-center gap-1 text-base md:text-lg'
           href={link.link}
           target='_blank'
           rel='noreferrer'

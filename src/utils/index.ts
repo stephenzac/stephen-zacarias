@@ -41,19 +41,20 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    projectName: 'Soundle',
-    projectLink: 'https://soundle.stephenzacarias.com',
-    projectDescription:
-      "An independently developed, interactive Wordle-like ear training game designed to challenge users' pitch recognition skills",
-    skills: ['React', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
-  },
-  {
     projectName: 'Anteater Band Website',
     projectLink: 'https://uciband.com',
     projectDescription:
       'Collaborative project to develop and maintain a rewrite of the UC Irvine Anteater Band website',
     skills: ['Next.js', 'GraphQL', 'Contentful', 'Chakra'],
   },
+  {
+    projectName: 'Soundle',
+    projectLink: 'https://soundle.stephenzacarias.com',
+    projectDescription:
+      "An independently developed, interactive Wordle-like ear training game designed to challenge users' pitch recognition skills",
+    skills: ['React', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
+  },
+
   {
     projectName: '🏆 Live, Laugh, Zot',
     projectLink: 'https://github.com/stephenzac/live-laugh-zot',

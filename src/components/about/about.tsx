@@ -1,14 +1,21 @@
 import { IntroText } from './intro-text';
-import { IntroBox } from './intro-box';
+
+import { MyPicture } from './my-picture';
+import { NewLinks } from './new-links';
 
 export const About: React.FC = () => (
-  <header className='flex flex-col items-center justify-center w-full gap-5'>
-    <div className='grid grid-cols-1 md:grid-cols-[60%_40%] w-full gap-6 lg:gap-8'>
-      <div className='flex items-center justify-center '>
-        <IntroBox />
+  <header className='flex flex-col w-full gap-4 items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-[auto,1fr] gap-x-2 gap-y-2 items-center'>
+      <div className='flex justify-center'>
+        <MyPicture />
       </div>
 
-      <IntroText />
+      <div className='flex flex-col gap-3 text-box h-full'>
+        <h1 className='text-xl pl-[2.2px]'>Hey, I&apos;m Stephen!</h1>
+        <NewLinks />
+      </div>
     </div>
+
+    <IntroText />
   </header>
 );

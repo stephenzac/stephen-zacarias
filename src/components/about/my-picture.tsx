@@ -6,6 +6,6 @@ export const MyPicture: React.FC = () => (
     height={225}
     width={225}
     alt='Picture of Stephen smiling'
-    className='w-48 h-48 mb-8 border-4 border-solid border-accent overflow-hidden rounded-md'
+    className='w-48 h-48 rounded-md border-4 border-accent'
   />
 );

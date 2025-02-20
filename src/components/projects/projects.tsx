@@ -23,7 +23,6 @@ export const Projects: React.FC = () => (
       whileInView='animate'
       viewport={{ once: true }}
     >
-      {/* <div className='flex flex-wrap items-stretch justify-center gap-20 mb-28'> */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((project) => (
           <ProjectCard

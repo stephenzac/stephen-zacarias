@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll } from 'motion/react';
 
 export const TopScrollBar: React.FC = () => {
   const { scrollYProgress } = useScroll();

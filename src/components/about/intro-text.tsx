@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export const IntroText: React.FC = () => (
   <div className='text-box md:w-3/4 flex flex-col relative'>

@@ -37,7 +37,7 @@
   .section-header {
     font-size: 30px;
     font-size: clamp(1.4rem, 3vw, 2.4rem);
-    font-weight: 900;
+    font-weight: 1000;
     text-wrap: stable;
     margin-bottom: 20px;
     text-align: center;

@@ -1,7 +1,7 @@
 'use client';
 
 import { personalLinks } from '@/utils';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export const MyLinks: React.FC = () => (
   <div className='flex flex-col items-start gap-1'>

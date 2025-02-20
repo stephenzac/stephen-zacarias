@@ -1,7 +1,7 @@
 'use client';
 
 import { projects } from '@/utils';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ProjectCard } from './project-card';
 
 const projectVariant = {

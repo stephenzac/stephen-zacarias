@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { InterestsSectionHeader } from '../app/section-header';
 import { InterestsListElement } from './interests-list-element';
 import { Footer } from '../app/footer';

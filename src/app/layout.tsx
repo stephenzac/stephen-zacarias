@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
-import TopScrollBar from '../components/top-scroll-bar';
+import { TopScrollBar } from '../components/app/top-scroll-bar';
+import { MainContainer } from '@/components/app/main-container';
 
 const robotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] });
 
@@ -18,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={robotoMono.className} suppressHydrationWarning={true}>
-        <TopScrollBar />
-        {children}
+        <div className='flex justify-center'>
+          <TopScrollBar />
+
+          <MainContainer>{children}</MainContainer>
+        </div>
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-import ListPlus from './list-plus';
+import { ListPlus } from './list-plus';
 
 interface InterestsListElementProps {
   children?: React.ReactNode;

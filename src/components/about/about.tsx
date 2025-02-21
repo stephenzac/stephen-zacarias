@@ -10,7 +10,7 @@ export const About: React.FC = () => (
         <MyPicture />
       </div>
 
-      <div className='flex flex-col gap-3 text-box h-full'>
+      <div className='flex flex-col gap-3 justify-center items-center md:items-start text-box h-full'>
         <h1 className='text-xl pl-[2.2px]'>Hey, I&apos;m Stephen!</h1>
         <MyLinks />
       </div>

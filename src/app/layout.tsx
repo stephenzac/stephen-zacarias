@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={robotoMono.className} suppressHydrationWarning={true}>
-        <div className='flex justify-center'>
+        <div className='flex justify-center bg-gray-200'>
           <TopScrollBar />
 
           <MainContainer>{children}</MainContainer>

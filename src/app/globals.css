@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 
 @theme {
-  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  /* --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
   --background-image-gradient-conic: conic-gradient(
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
-  );
+  ); */
 
   --color-accent: #e0a51b;
   --color-lighter-accent: #ebbd34;
@@ -75,13 +75,32 @@
     @apply px-5 py-3 rounded-md border-8 border-double border-accent bg-zinc-700 text-slate-100;
   }
 
+  /* .dialogue-box {
+    @apply max-w-md p-4 bg-gray-700 border-4 border-black rounded-lg shadow-2xl font-mono text-white text-lg;
+  }
+
+  .dialogue-content {
+    @apply border-4 border-sky-600 p-2 space-y-2;
+  } */
+
+  .dialogue-box {
+    @apply bg-gray-300 p-6 border-2 border-gray-400 rounded-xl shadow-2xl;
+  }
+
+  .dialogue-box {
+    @apply relative bg-gradient-to-br from-gray-300 to-gray-400 
+    p-6 border-4 border-gray-500 rounded-xl shadow-2xl 
+    before:absolute before:inset-0 before:border-2 before:border-white before:m-1 
+    transition-all hover:scale-[1.02] hover:shadow-[0px_10px_30px_rgba(0,0,0,0.3)];
+  }
+
   .link-hover {
     @apply hover:text-lighter-accent transition-all;
   }
 }
 
 body {
-  color: #d6d6d6;
+  /* color: #d6d6d6;
 
   background-image: radial-gradient(
     #414141 1.2000000000000002px,
@@ -92,5 +111,5 @@ body {
   color: #d6d6d6;
 
   background-color: #131313;
-  background-size: 20px 20px;
+  background-size: 20px 20px; */
 }

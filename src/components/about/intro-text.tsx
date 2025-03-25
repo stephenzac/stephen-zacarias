@@ -1,6 +1,6 @@
-'use client';
+// 'use client';
 
-import { motion } from 'motion/react';
+// import { motion } from 'motion/react';
 
 export const IntroText: React.FC = () => (
   <div className='text-box md:w-3/4 flex flex-col relative'>
@@ -14,8 +14,10 @@ export const IntroText: React.FC = () => (
       apply my skills to real-world challenges and build impactful solutions!
     </p>
 
+    <span className='absolute bottom-1 right-3 animate-bounce'>▼</span>
+
     {/* triangle thing */}
-    <motion.div
+    {/* <motion.div
       className='duration-150 w-0 aspect-square border-t-[11px] border-b-white border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent absolute bottom-2.5 right-4'
       initial={{ y: 0 }}
       variants={{
@@ -32,6 +34,6 @@ export const IntroText: React.FC = () => (
       }}
       animate={['idle', 'hover']}
       whileHover='hover'
-    />
+    /> */}
   </div>
 );

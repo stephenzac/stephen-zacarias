@@ -2,10 +2,6 @@ interface SectionHeaderProps {
   children?: React.ReactNode;
 }
 
-export const InterestsSectionHeader: React.FC<SectionHeaderProps> = ({
-  children,
-}) => (
-  <h1 className='text-xl font-extrabold md:text-2xl text-lighter-accent'>
-    {children}
-  </h1>
+export const SectionHeader: React.FC<SectionHeaderProps> = ({ children }) => (
+  <h1 className='text-3xl font-extrabold md:text-4xl mb-4'>{children}</h1>
 );

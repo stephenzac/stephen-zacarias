@@ -19,7 +19,9 @@ export const Project: React.FC<ProjectProps> = ({ data }) => (
         <GoLink />
       </a>
     </h3>
+
     <p className='pl-5 md:pl-7 mb-2'>{data.description}</p>
+
     <div className='flex flex-wrap gap-3'>
       {data.skills.map((skill) => (
         <p key={skill} className='text-gray-400 italic text-sm'>

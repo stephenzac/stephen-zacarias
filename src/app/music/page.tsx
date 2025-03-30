@@ -1,4 +1,5 @@
 import { SectionHeader } from '@/app/section-header';
+import { RiMusic2Line } from 'react-icons/ri';
 
 interface VideoData {
   title: string;
@@ -30,8 +31,13 @@ const videos: VideoData[] = [
 
 export default function Music() {
   return (
-    <main className='w-full pt-10'>
-      <SectionHeader>Music</SectionHeader>
+    <main className='w-full pt-16'>
+      <SectionHeader>
+        Music
+        <span className='text-accent'>
+          <RiMusic2Line />
+        </span>
+      </SectionHeader>
 
       <p className='mb-10'>
         I&apos;ve been playing the trombone for 11 years now. Here are some
@@ -43,6 +49,7 @@ export default function Music() {
           <h3 className='text-xl text-accent font-bold italic mb-2'>
             {video.title}
           </h3>
+
           <iframe
             className='w-full h-80'
             src={video.embedURL}
@@ -50,6 +57,7 @@ export default function Music() {
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             referrerPolicy='strict-origin-when-cross-origin'
             allowFullScreen
+            loading='lazy'
           />
         </article>
       ))}

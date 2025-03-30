@@ -2,13 +2,20 @@ import { SectionHeader } from '@/app/section-header';
 import { InterestsSection } from '@/components/interests/interests-section';
 import { InterestsSectionHeader } from '@/components/interests/interests-section-header';
 import { InterestsListElement } from '@/components/interests/interests-list-element';
+import { AiOutlineSmile } from 'react-icons/ai';
+import { LineDivider } from '@/components/app/line-divider';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='w-full pt-10'>
+    <main className='w-full pt-16'>
       <section className='mb-12'>
-        <SectionHeader>Hello!</SectionHeader>
+        <SectionHeader>
+          Hello!
+          <span className='text-accent'>
+            <AiOutlineSmile />
+          </span>
+        </SectionHeader>
         <img
           src='/stephen.JPG'
           className='aspect-square h-40 rounded-xl mb-4'
@@ -19,9 +26,11 @@ export default function Home() {
           University of California, Irvine. I enjoy building things, working
           with/on the web, and working with others!
         </header>
-        <Link className='underline text-accent' href='/projects'>
+        <Link className='text-accent' href='/projects'>
           Check out some of the cool things I&apos;ve built!
         </Link>
+
+        <LineDivider />
       </section>
 
       <section>

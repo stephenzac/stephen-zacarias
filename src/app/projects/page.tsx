@@ -1,5 +1,7 @@
 import { SectionHeader } from '@/app/section-header';
 import { Project } from './components/project';
+import { VscTools } from 'react-icons/vsc';
+import { Fragment } from 'react';
 
 export interface ProjectData {
   title: string;
@@ -48,16 +50,20 @@ const ProjectsList: ProjectData[] = [
 
 export default function Projects() {
   return (
-    <main className='w-full pt-10'>
-      <SectionHeader>Projects</SectionHeader>
+    <main className='w-full pt-16'>
+      <SectionHeader>
+        Projects{' '}
+        <span className='text-accent'>
+          <VscTools />
+        </span>
+      </SectionHeader>
 
       <section>
         {ProjectsList.map((project) => (
-          <>
-            {/* <div className='w-full h-[1px] bg-accent mt-8 mb-2' /> */}
-            <Project key={project.title} data={project} />
+          <Fragment key={project.title}>
+            <Project data={project} />
             <div className='mb-12' />
-          </>
+          </Fragment>
         ))}
       </section>
     </main>

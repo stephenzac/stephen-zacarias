@@ -5,6 +5,7 @@ import { InterestsListElement } from '@/components/interests/interests-list-elem
 import { AiOutlineSmile } from 'react-icons/ai';
 import { LineDivider } from '@/components/app/line-divider';
 import Link from 'next/link';
+import { Links } from './links';
 
 export default function Home() {
   return (
@@ -16,19 +17,25 @@ export default function Home() {
             <AiOutlineSmile />
           </span>
         </SectionHeader>
-        <img
+
+        {/* <img
           src='/stephen.JPG'
           className='aspect-square h-40 rounded-xl mb-4'
           alt='Portrait of Stephen'
-        />
+        /> */}
+
         <header className='mb-1'>
-          I&apos;m Stephen, a fourth year Computer Science major at the
-          University of California, Irvine. I enjoy building things, working
-          with/on the web, and working with others!
+          I am <span className='text-accent'>Stephen Zacarias</span>, a fourth
+          year Computer Science major at the University of California, Irvine. I
+          enjoy building things, working with/on the web, and working with
+          others!
         </header>
-        <Link className='text-accent' href='/projects'>
+
+        <Link className='text-accent underline' href='/projects'>
           Check out some of the cool things I&apos;ve built!
         </Link>
+
+        <Links />
 
         <LineDivider />
       </section>

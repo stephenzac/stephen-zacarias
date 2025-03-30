@@ -41,7 +41,7 @@ export default function Music() {
 
       <p className='mb-10'>
         I&apos;ve been playing the trombone for 11 years now. Here are some
-        videos of me doing so!
+        videos of me in action!
       </p>
 
       {videos.map((video) => (

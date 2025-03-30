@@ -82,5 +82,11 @@
 
 body {
   color: #d6d6d6;
-  background-color: #1e1e1e;
+  background-color: rgb(17, 17, 12);
+  background-image: url('/black-paper.png');
+  background-size: 300px;
+}
+
+*::selection {
+  background-color: #edd191;
 }

@@ -12,14 +12,15 @@ export default function Home() {
         <img
           src='/stephen.JPG'
           className='aspect-square h-40 rounded-xl mb-4'
+          alt='Portrait of Stephen'
         />
         <header className='mb-1'>
-          I'm Stephen, a fourth year Computer Science major at the University of
-          California, Irvine. I enjoy building things, working with/on the web,
-          and working with others!
+          I&apos;m Stephen, a fourth year Computer Science major at the
+          University of California, Irvine. I enjoy building things, working
+          with/on the web, and working with others!
         </header>
         <Link className='underline text-accent' href='/projects'>
-          Check out some of the cool things I've built!
+          Check out some of the cool things I&apos;ve built!
         </Link>
       </section>
 

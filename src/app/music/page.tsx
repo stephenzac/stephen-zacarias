@@ -23,7 +23,7 @@ const videos: VideoData[] = [
     embedURL: 'https://www.youtube.com/embed/akI8kKtQVFI?si=tkEtujxPI3pqA3T2',
   },
   {
-    title: 'Alta Loma High School Jazz A - Reno Jazz Festival',
+    title: 'Alta Loma High School Jazz A - Reno Jazz Festival 2019',
     embedURL: 'https://www.youtube.com/embed/0RgOaiub8KI?si=SMtQuuyQnRAI9-IT',
   },
 ];
@@ -34,12 +34,12 @@ export default function Music() {
       <SectionHeader>Music</SectionHeader>
 
       <p className='mb-10'>
-        I've been playing the trombone for 11 years now. Here are some videos of
-        me doing so!
+        I&apos;ve been playing the trombone for 11 years now. Here are some
+        videos of me doing so!
       </p>
 
       {videos.map((video) => (
-        <article className='mb-16'>
+        <article key={video.title} className='mb-16'>
           <h3 className='text-xl text-accent font-bold italic mb-2'>
             {video.title}
           </h3>

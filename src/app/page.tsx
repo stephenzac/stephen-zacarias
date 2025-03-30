@@ -1,6 +1,6 @@
 import { SectionHeader } from '@/components/app/section-header';
-import { InterestsSection } from '@/components/interests-section';
-import { InterestsSectionHeader } from '@/components/interests-section-header';
+import { InterestsSection } from '@/components/interests/interests-section';
+import { InterestsSectionHeader } from '@/components/interests/interests-section-header';
 import { InterestsListElement } from '@/components/interests/interests-list-element';
 import Link from 'next/link';
 
@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <main className='w-full pt-10'>
       <section className='mb-16'>
-        <SectionHeader>Home</SectionHeader>
-        <p className='mb-2'>
+        <SectionHeader>Hello!</SectionHeader>
+        <header className='mb-1'>
           Hello! I{`'`}m Stephen, a fourth year Computer Science major at the
           University of California, Irvine. I enjoy building things, working
           with/on the web, and working with others!
-        </p>
+        </header>
         <Link className='underline text-accent' href='/projects'>
           Check out some of the cool things I{`'`}ve built!
         </Link>
@@ -24,7 +24,7 @@ export default function Home() {
 
         <InterestsSection>
           <InterestsSectionHeader>My Musical Endeavors</InterestsSectionHeader>
-          <ul className='md:pl-3'>
+          <ul className='md:pl-2  '>
             <InterestsListElement>
               <a
                 href='https://www.youtube.com/watch?v=PM5NgQcdWqM'
@@ -87,7 +87,7 @@ export default function Home() {
 
         <InterestsSection>
           <InterestsSectionHeader>Gaming</InterestsSectionHeader>
-          <ul className='md:pl-3'>
+          <ul className='md:pl-2  '>
             <InterestsListElement>
               Favorite game genre: FPS
             </InterestsListElement>
@@ -122,7 +122,7 @@ export default function Home() {
 
         <InterestsSection>
           <InterestsSectionHeader>Friends + Family</InterestsSectionHeader>
-          <ul className='md:pl-3'>
+          <ul className='md:pl-2  '>
             <InterestsListElement>
               Eating, cooking (big foodie)
             </InterestsListElement>

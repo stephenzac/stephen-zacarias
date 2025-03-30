@@ -1,4 +1,4 @@
-import { SectionHeader } from '@/components/app/section-header';
+import { SectionHeader } from '@/app/section-header';
 
 interface VideoData {
   title: string;

@@ -1,4 +1,4 @@
-import { SectionHeader } from '@/components/app/section-header';
+import { SectionHeader } from '@/app/section-header';
 import { InterestsSection } from '@/components/interests/interests-section';
 import { InterestsSectionHeader } from '@/components/interests/interests-section-header';
 import { InterestsListElement } from '@/components/interests/interests-list-element';

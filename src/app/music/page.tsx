@@ -1,4 +1,4 @@
-import { SectionHeader } from '@/app/section-header';
+import { SectionHeader } from '@/components/app/section-header';
 import { RiMusic2Line } from 'react-icons/ri';
 
 interface VideoData {

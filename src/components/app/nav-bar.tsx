@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'motion/react';
-import { IoGlassesOutline } from 'react-icons/io5';
+import { FaGlasses } from 'react-icons/fa';
 
 interface NavLink {
   linkText: string;
@@ -36,7 +36,7 @@ export const NavBar: React.FC = () => {
               layoutId='glasses'
               transition={{ duration: 0.2 }}
             >
-              <IoGlassesOutline />
+              <FaGlasses />
             </motion.div>
           )}
         </Link>

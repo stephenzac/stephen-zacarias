@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://stephenzacarias.com
+
+# Sitemaps
+Sitemap: https://stephenzacarias.com/sitemap.xml

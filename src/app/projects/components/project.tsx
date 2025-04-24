@@ -7,7 +7,7 @@ interface ProjectProps {
 
 export const Project: React.FC<ProjectProps> = ({ data }) => (
   <article className='mb-2'>
-    <h3 className='italic font-bold text-xl text-accent mb-2'>
+    <h3 className='italic font-bold text-xl text-accent mb-3'>
       <a
         href={data.link}
         target='_blank'
@@ -20,7 +20,7 @@ export const Project: React.FC<ProjectProps> = ({ data }) => (
       </a>
     </h3>
 
-    <p className='pl-5 md:pl-7 mb-2'>{data.description}</p>
+    <p className='pl-5 md:pl-7 mb-3'>{data.description}</p>
 
     <div className='flex flex-wrap gap-3'>
       {data.skills.map((skill) => (

@@ -29,57 +29,6 @@
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .section-header {
-    font-size: 30px;
-    font-size: clamp(1.4rem, 3vw, 2.4rem);
-    font-weight: 900;
-    text-wrap: stable;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .responsive-header {
-    font-size: clamp(1.7rem, 3vw, 2.6rem);
-  }
-
-  .responsive-text {
-    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
-  }
-
-  .project-text {
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-  }
-
-  .project-header {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-  }
-
-  .list-plus {
-    color: #b0f2f7;
-    margin-left: 16px;
-    font-size: 16px;
-  }
-
-  .blurred-backdrop {
-    background-color: rgba(224, 165, 27, 0.7);
-    -webkit-backdrop-filter: blur(4px) !important;
-    backdrop-filter: blur(4px) !important;
-  }
-
-  .text-box {
-    @apply px-5 py-3 rounded-md border-8 border-double border-accent bg-zinc-700 text-slate-100;
-  }
-
-  .link-hover {
-    @apply hover:text-lighter-accent transition-all;
-  }
-}
-
 body {
   color: #d6d6d6;
   background-color: rgb(17, 17, 12);

@@ -38,14 +38,14 @@ export default function Home() {
         <SectionHeader>More About Me</SectionHeader>
 
         <InterestsSection>
-          <InterestsSectionHeader>My Musical Endeavors</InterestsSectionHeader>
+          <InterestsSectionHeader>Musical Endeavors</InterestsSectionHeader>
           <ul className='md:pl-2'>
             <InterestsListElement>
               <a
                 href='https://www.youtube.com/watch?v=PM5NgQcdWqM'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 Playing trombone
               </a>
@@ -57,7 +57,7 @@ export default function Home() {
                 href='https://www.youtube.com/watch?v=Ic0FsCs-R6Y'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 L.A studio jazz trombonists
               </a>
@@ -70,7 +70,7 @@ export default function Home() {
                 href='https://uciband.com'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 UC Irvine Anteater Band
               </a>
@@ -87,7 +87,10 @@ export default function Home() {
 
             <InterestsListElement>
               Check out my{' '}
-              <Link href='/music' className='underline'>
+              <Link
+                href='/music'
+                className='underline hover:text-accent transition-colors duration-150'
+              >
                 music page!
               </Link>
             </InterestsListElement>
@@ -98,7 +101,7 @@ export default function Home() {
                 href='https://open.spotify.com/user/cheesehugger1'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 Spotify profile
               </a>{' '}
@@ -124,7 +127,7 @@ export default function Home() {
                 href='https://www.youtube.com/watch?v=I_DsR2mZsK0'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 Valorant
               </a>
@@ -136,7 +139,7 @@ export default function Home() {
                 href='https://www.youtube.com/watch?v=5HOU8SykHzg'
                 target='_blank'
                 rel='noreferrer'
-                className='underline'
+                className='underline hover:text-accent transition-colors duration-150'
               >
                 Minesweeper speedrunning
               </a>{' '}

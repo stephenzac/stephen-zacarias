@@ -40,8 +40,8 @@ export default function Music() {
       </SectionHeader>
 
       <p className='mb-10'>
-        I&apos;ve been playing the trombone for 11 years now. Here are some
-        videos of me in action!
+        I&apos;ve been playing the trombone for 11 years now. Here&apos;s me in
+        action!
       </p>
 
       {videos.map((video) => (

@@ -19,10 +19,9 @@ export default function Home() {
         </SectionHeader>
 
         <header className='mb-1'>
-          I am <span className='text-accent'>Stephen Zacarias</span>, a fourth
-          year Computer Science major at the University of California, Irvine. I
-          enjoy building things, working with/on the web, and working with
-          others!
+          I am <span className='text-accent'>Stephen Zacarias</span>, a Computer
+          Science graduate from the University of California, Irvine. I enjoy
+          building things, working with/on the web, and working with others!
         </header>
 
         <Link className='text-accent underline' href='/projects'>
